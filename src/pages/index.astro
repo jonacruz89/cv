@@ -3,17 +3,21 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Jonathan Cruz - CV">
-  <main class="grid grid-cols-[70px_1fr_2fr] h-svh">
+  <main
+    class="grid grid-cols-[70px_1fr_2fr] h-full max-w-4xl mx-auto bg-white text-xs"
+  >
     <div class="left-side"></div>
     <section class="border-r-[3px] border-[#d9d9d9] p-5 flex flex-col gap-6">
-      <div
-        class="text-8xl font-extrabold h-32 flex justify-center items-center"
-      >
-        JC
+      <div class="font-extrabold h-32 flex justify-center items-center">
+        <img
+          src="https://unavatar.io/github/jonacruz89"
+          alt=""
+          class="w-28 rounded-full"
+        />
       </div>
 
       <article class="flex flex-col gap-3">
-        <h2 class="underline text-blue-600 font-bold">Objetivo Profesional</h2>
+        <h2 class="underline text-blue-600 font-bold">Acerca de mí</h2>
         <p class="text-pretty">
           Ingeniero de software con más de 5 años de experiencia en aplicaciones
           comerciales, multiniveles, tiendas online, pasarelas de pago,
@@ -58,9 +62,9 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section class="p-5 flex flex-col gap-6">
-      <div class="h-32">
+      <div class="h-32 flex flex-col justify-center items-center">
         <p class="text-gray-500">Ingeniero de Software</p>
-        <p class="text-4xl">Jonathan <br /> Cruz</p>
+        <p class="text-4xl">Jonathan Cruz</p>
       </div>
 
       <article class="flex flex-col gap-3">
@@ -193,7 +197,9 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex justify-between items-center">
           <span>
             INGENIERO DE SOFTWARE <br />
-            <span class="text-gray-500"> POLITÉCNICO GRANCOLOMBIANO. BOGOTÁ, COLOMBIA.</span>
+            <span class="text-gray-500">
+              POLITÉCNICO GRANCOLOMBIANO. BOGOTÁ, COLOMBIA.</span
+            >
           </span>
           <span>2019 - 2022</span>
         </div>
@@ -201,11 +207,12 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex justify-between items-center">
           <span>
             SEGURIDAD INFORMÁTICA <br />
-            <span class="text-gray-500"> UNIPANAMERICANA. BOGOTÁ, COLOMBIA.</span>
+            <span class="text-gray-500">
+              UNIPANAMERICANA. BOGOTÁ, COLOMBIA.</span
+            >
           </span>
           <span>JUN 2017 - JUL 2017</span>
         </div>
-
       </article>
     </section>
   </main>
