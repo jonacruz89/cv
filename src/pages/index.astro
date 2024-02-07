@@ -3,70 +3,216 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Jonathan Cruz - CV">
-  <main class="w-full">
-    <h1>Jonathan Cruz - Ingeniero de Software</h1>
-    <h2>Objetivo Profesional</h2>
-    <p>
-      Ingeniero de software con más de 5 años de experiencia en aplicaciones
-      comerciales, multiniveles, tiendas online, pasarelas de pago,
-      criptomonedas y chats. Siempre buscando mejorar los procesos y automatizar
-      las tareas para obtener un rendimiento mucho mayor.
-    </p>
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Desarrollo de software</li>
-      <li>Adaptabilidad</li>
-      <li>Trabajo en equipo</li>
-      <li>Habilidades de comunicación interpersonal</li>
-    </ul>
-    <h2>Idiomas</h2>
-    <p>Español (Nativo), Inglés (Nivel básico)</p>
-    <h2>Información de Contacto</h2>
-    <p>Email: jonathan.cruz89@gmail.com</p>
-    <p>Teléfono: (+57) 305 383 50 10</p>
-    <p>Nacionalidad: Colombiano</p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/jonathan-cruz89"
-        >Perfil de LinkedIn</a
+  <main class="grid grid-cols-[70px_1fr_2fr] h-svh">
+    <div class="left-side"></div>
+    <section class="border-r-[3px] border-[#d9d9d9] p-5 flex flex-col gap-6">
+      <div
+        class="text-8xl font-extrabold h-32 flex justify-center items-center"
       >
-    </p>
-    <h2>Experiencia Laboral</h2>
-    <p>
-      BACKEND DEVELOPER SENIOR - LAIKA. BOGOTÁ, COLOMBIA. (AGO 2022 - DIC 2022)
-    </p>
-    <p>
-      SOFTWARE ENGINEER - SELLRS. CIUDAD DE MÉXICO (CDMX), MÉXICO. (ENE 2022 -
-      JUL 2022)
-    </p>
-    <p>
-      BACKEND AND INTEGRATIONS DEVELOPER - LORO. BOGOTÁ, COLOMBIA. (MAY 2020 -
-      DIC 2021)
-    </p>
-    <p>SENIOR DEVELOPER - BRM. BOGOTÁ, COLOMBIA. (JUL 2019 - MAR 2020)</p>
-    <h2>Educación</h2>
-    <p>
-      Ingeniero de Software - POLITÉCNICO GRANCOLOMBIANO. BOGOTÁ, COLOMBIA.
-      (2019 - 2022)
-    </p>
-    <p>
-      Seguridad Informática - UNIPANAMERICANA. BOGOTÁ, COLOMBIA. (JUN 2017 - JUL
-      2017)
-    </p>
-    <h2>Tecnologías</h2>
-    <p>
-      PHP, MySQL, NodeJS, Laravel, JavaScript, CSS, HTML, Bootstrap, ReactJS,
-      AWS, Docker, DDD, CQRS, Linux Command Line, Git, Github Actions, DevOps
-    </p>
-    <h2>Experiencia Adicional</h2>
-    <p>
-      Automatización en la creación y actualización de productos en marketplaces
-      como Mercado Libre y Shopify.
-    </p>
-    <p>
-      Crear e implementar software para la conexión de múltiples tiendas que
-      quieran vender sus productos a través de la empresa.
-    </p>
-    <!-- Se puede agregar más contenido aquí -->
+        JC
+      </div>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">Objetivo Profesional</h2>
+        <p class="text-pretty">
+          Ingeniero de software con más de 5 años de experiencia en aplicaciones
+          comerciales, multiniveles, tiendas online, pasarelas de pago,
+          criptomonedas y chats. Siempre buscando mejorar los procesos y
+          automatizar las tareas para obtener un rendimiento mucho mayor.
+        </p>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">Habilidades</h2>
+        <ul class="*:before:content-['-']">
+          <li>Desarrollo de software</li>
+          <li>Adaptabilidad</li>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación interpersonal</li>
+          <li>PHP, MySQL, NodeJS, Larave</li>
+          <li>JavaScript, CSS, HTML, Bootstrap, ReactJS</li>
+          <li>AWS, Docker, DDD, CQRS, Linux Command Line</li>
+          <li>Git, Github Actions, DevOps</li>
+        </ul>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">Idiomas</h2>
+        <ul class="*:before:content-['-']">
+          <li>Español | Nativo</li>
+          <li>Inglés | Básico</li>
+        </ul>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">
+          Información de Contacto
+        </h2>
+        <a href="mailto:jonathan.cruz89@gmail.com"
+          >✉ jonathan.cruz89@gmail.com</a
+        >
+        <a href="https://wa.me/573053835010">📱 (+57) 305 383 50 10</a>
+        <a href="https://www.linkedin.com/in/jonathan-cruz89">linkedin</a>
+        <a href="https://github.com/jonacruz89">github</a>
+      </article>
+    </section>
+
+    <section class="p-5 flex flex-col gap-6">
+      <div class="h-32">
+        <p class="text-gray-500">Ingeniero de Software</p>
+        <p class="text-4xl">Jonathan <br /> Cruz</p>
+      </div>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">Experiencia</h2>
+
+        <div class="flex justify-between items-center">
+          <span>
+            BACKEND DEVELOPER SENIOR <br />
+            <span class="text-gray-500"> LAIKA. BOGOTÁ, COLOMBIA.</span>
+          </span>
+          <span>AGO 2022 - DIC 2022</span>
+        </div>
+
+        <ul class="*:before:content-['-'] text-gray-500">
+          <li>
+            Participación proactiva en encuentros orientados a la creación de
+            nuevas prácticas
+          </li>
+          <li>
+            Automatización en la creación y actualización de productos en
+            marketplaces como Mercado Libre y Shopify
+          </li>
+          <li>
+            Crear e implementar software para la conexión de múltiples tiendas
+            que quieran vender sus productos a través de la empresa
+          </li>
+        </ul>
+
+        <div class="flex justify-between items-center">
+          <span>
+            SOFTWARE ENGINEER <br />
+            <span class="text-gray-500">
+              SELLRS. CIUDAD DE MÉXICO (CDMX), MÉXICO.</span
+            >
+          </span>
+          <span>ENE 2022 - JUL 2022</span>
+        </div>
+
+        <ul class="*:before:content-['-'] text-gray-500">
+          <li>
+            Crear sistema de gestión de productos, de forma manual (Google
+            Drive) y automática (Mercado Libre, Shopify)
+          </li>
+          <li>
+            Ejecute el ciclo de vida completo de desarrollo de software (SDLC).
+          </li>
+          <li>
+            Desarrolle diagramas de flujo, diseños y documentación para
+            identificar requisitos y soluciones.
+          </li>
+          <li>Escribir código bien diseñado y comprobable.</li>
+          <li>
+            Producir especificaciones y determinar la viabilidad operativa.
+          </li>
+          <li>
+            Integre componentes de software en un sistema de software totalmente
+            funcional.
+          </li>
+          <li>
+            Desarrollar planes de verificación de software y procedimientos de
+            aseguramiento de la calidad.
+          </li>
+          <li>Documente y mantenga la funcionalidad del software</li>
+          <li>
+            Resuelva problemas, depure y actualice los sistemas existentes.
+          </li>
+          <li>
+            Implemente programas y evalúe los comentarios de los usuarios.
+          </li>
+          <li>
+            Cumplir con los planes del proyecto y los estándares de la
+            industria.
+          </li>
+          <li>
+            Asegúrese de que el software esté actualizado con las funciones más
+            recientes.
+          </li>
+        </ul>
+
+        <div class="flex justify-between items-center">
+          <span>
+            BACKEND AND INTEGRATIONS DEVELOPER <br />
+            <span class="text-gray-500"> LORO. BOGOTÁ, COLOMBIA.</span>
+          </span>
+          <span>MAY 2020 - DIC 2021</span>
+        </div>
+
+        <ul class="*:before:content-['-'] text-gray-500">
+          <li>
+            Realizar ajustes, mejoras, nuevos desarrollos en la parte trasera,
+            integrando con app y web a través de apis, gestionando cron job,
+            optimizando código.
+          </li>
+
+          <li>
+            Implemente ReactPHP para realizar cargas asincrónicas y
+            actualizaciones de stock.
+          </li>
+
+          <li>
+            Realizar conexiones con Vtex, Woocommerce y bases de datos para
+            carga y actualización de stock.
+          </li>
+          <li>
+            Implementar la categorización y subcategorización automática y
+            masiva de productos
+          </li>
+        </ul>
+
+        <div class="flex justify-between items-center">
+          <span>
+            SENIOR DEVELOPER <br />
+            <span class="text-gray-500"> BRM. BOGOTÁ, COLOMBIA.</span>
+          </span>
+          <span>JUL 2019 - MAR 2020</span>
+        </div>
+
+        <ul class="*:before:content-['-'] text-gray-500">
+          <li>
+            Levantar, Gestionar y Desarrollar los requerimientos necesarios para
+            cada proyecto que me fue encomendado, liderando un equipo de
+            desarrolladores junior y liderando dichos proyectos.
+          </li>
+        </ul>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">Educación</h2>
+
+        <div class="flex justify-between items-center">
+          <span>
+            INGENIERO DE SOFTWARE <br />
+            <span class="text-gray-500"> POLITÉCNICO GRANCOLOMBIANO. BOGOTÁ, COLOMBIA.</span>
+          </span>
+          <span>2019 - 2022</span>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <span>
+            SEGURIDAD INFORMÁTICA <br />
+            <span class="text-gray-500"> UNIPANAMERICANA. BOGOTÁ, COLOMBIA.</span>
+          </span>
+          <span>JUN 2017 - JUL 2017</span>
+        </div>
+
+      </article>
+    </section>
   </main>
 </Layout>
+
+<style>
+  .left-side {
+    background-color: var(--color-primary);
+  }
+</style>
