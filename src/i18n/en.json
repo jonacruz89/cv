@@ -3,14 +3,14 @@
   "ABOUT_ME_TEXT": "I am a software engineer with a passion for web development. I have experience in developing web applications using modern technologies such as React, Node.js, and MongoDB. I am also familiar with cloud services such as AWS and Azure. I am a quick learner and I am always looking for new challenges to improve my skills.",
   "SKILLS": "Skills",
   "SKILLS_LIST": [
-    " Software Development",
-    " Adaptability",
-    " Teamwork",
-    " Interpersonal Communication",
-    " PHP, MySQL, NodeJS, Laravel",
-    " JavaScript, CSS, HTML, Bootstrap, ReactJS",
-    " AWS, Docker, DDD, CQRS, Linux Command Line",
-    " Git, Github Actions, DevOps"
+    "Software Development",
+    "Adaptability",
+    "Teamwork",
+    "Interpersonal Communication",
+    "PHP, MySQL, NodeJS, Laravel",
+    "JavaScript, CSS, HTML, Bootstrap, ReactJS",
+    "AWS, Docker, DDD, CQRS, Linux Command Line",
+    "Git, Github Actions, DevOps"
   ],
   "LANGUAGES": "Languages",
   "LANGUAGES_LIST": ["Español | Nativo", "Inglés | Básico"],
@@ -41,10 +41,10 @@
   "EXPERIENCE": "Experience",
   "EXPERIENCE_LIST": [
     {
-      "position": "FULLSTACK DEVELOPER",
+      "position": "FULLSTACK ENGINEER",
       "company": "TECHGENIES.",
       "location": "BOGOTÁ, COLOMBIA.",
-      "date": "SEPT 2023 - ACTUALIDAD",
+      "date": "SEPT 2023 - PRESENT",
       "tasks": [
         "Software analysis and development, application maintenance.",
         "Execute the full Software Development Life Cycle (SDLC).",
@@ -55,7 +55,7 @@
       "position": "FULLSTACK DEVELOPER",
       "company": "MAIN OUTSOURCING SAS.",
       "location": "BOGOTÁ, COLOMBIA.",
-      "date": "ENE 2023 - AGO 2023",
+      "date": "JAN 2023 - AUG 2023",
       "tasks": [
         "Software analysis and development, application maintenance.",
         "Prepare reports and documentation corresponding to the developments.",
@@ -69,7 +69,7 @@
       "position": "BACKEND DEVELOPER SENIOR",
       "company": "LAIKA.",
       "location": "BOGOTÁ, COLOMBIA.",
-      "date": "AGO 2022 - DIC 2022",
+      "date": "AUG 2022 - DEC 2022",
       "tasks": [
         "Proactive participation in meetings focused on creating new practices.",
         "Automation in the creation and updating of products on marketplaces such as Mercado Libre and Shopify.",
@@ -80,7 +80,7 @@
       "position": "SOFTWARE ENGINEER",
       "company": "SELLRS.",
       "location": "CIUDAD DE MÉXICO (CDMX), MÉXICO.",
-      "date": "ENE 2022 - JUL 2022",
+      "date": "JAN 2022 - JUL 2022",
       "tasks": [
         "Create product management system, manually (Google Drive) and automatically (Mercado Libre, Shopify)",
         "Execute the full Software Development Life Cycle (SDLC).",
@@ -100,7 +100,7 @@
       "position": "BACKEND AND INTEGRATIONS DEVELOPER",
       "company": "LORO.",
       "location": "BOGOTÁ, COLOMBIA.",
-      "date": "MAY 2020 - DIC 2021",
+      "date": "MAY 2020 - DEC 2021",
       "tasks": [
         "Make adjustments, improvements, and new developments on the backend, integrating with the app and web through APIs, managing cron jobs, optimizing code.",
         "Implement ReactPHP for asynchronous uploads and stock updates.",
