@@ -44,7 +44,13 @@ const i18n = getI18N({ currentLocale });
         <h2 class="underline text-blue-600 font-bold">
           {i18n.CONTACT}
         </h2>
-        {i18n.CONTACT_LIST.map(({ href, text }) => <a href={href}>{text}</a>)}
+        {
+          i18n.CONTACT_LIST.map(({ href, text }) => (
+            <a href={href} target="_blank">
+              {text}
+            </a>
+          ))
+        }
       </article>
     </section>
 
@@ -52,6 +58,15 @@ const i18n = getI18N({ currentLocale });
       <div class="h-32 flex flex-col justify-center items-center">
         <p class="text-gray-500">{i18n.DEGREE}</p>
         <p class="text-4xl">{i18n.NAME}</p>
+        <div class="flex gap-3">
+          {
+            i18n.SOCIAL_NETWORKS_LIST.map(({ href, icon }) => (
+              <a href={href} target="_blank">
+                <img src={icon} alt="" width="22px">
+              </a>
+            ))
+          }
+        </div>
       </div>
 
       <article class="flex flex-col gap-3">

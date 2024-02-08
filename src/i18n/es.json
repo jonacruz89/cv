@@ -29,11 +29,11 @@
   "SOCIAL_NETWORKS_LIST": [
     {
       "href": "https://www.linkedin.com/in/jonathan-cruz89",
-      "icon": "🔗 LinkedIn"
+      "icon": "/linkedin.svg"
     },
     {
       "href": "https://github.com/jonacruz89",
-      "icon": "🔗 Github"
+      "icon": "/github.svg"
     }
   ],
   "DEGREE": "Ingeniero de Software",
