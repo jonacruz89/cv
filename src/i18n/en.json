@@ -41,6 +41,31 @@
   "EXPERIENCE": "Experience",
   "EXPERIENCE_LIST": [
     {
+      "position": "FULLSTACK DEVELOPER",
+      "company": "TECHGENIES.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "SEPT 2023 - ACTUALIDAD",
+      "tasks": [
+        "Software analysis and development, application maintenance.",
+        "Execute the full Software Development Life Cycle (SDLC).",
+        "Write well designed and testable code."
+      ]
+    },
+    {
+      "position": "FULLSTACK DEVELOPER",
+      "company": "MAIN OUTSOURCING SAS.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "ENE 2023 - AGO 2023",
+      "tasks": [
+        "Software analysis and development, application maintenance.",
+        "Prepare reports and documentation corresponding to the developments.",
+        "Assist in the implementation of the applications.",
+        "Attend meetings required for the developments to plan, define, deliver, etc.",
+        "Train the required personnel on the applications.",
+        "Formally deliver the software constructions."
+      ]
+    },
+    {
       "position": "BACKEND DEVELOPER SENIOR",
       "company": "LAIKA.",
       "location": "BOGOTÁ, COLOMBIA.",
