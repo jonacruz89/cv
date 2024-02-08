@@ -1,0 +1,112 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Jonathan Cruz - CV">
+  <main
+    class="grid grid-cols-[70px_1fr_2fr] h-full max-w-4xl mx-auto bg-white text-xs"
+  >
+    <div class="left-side"></div>
+    <section class="border-r-[3px] border-[#d9d9d9] p-5 flex flex-col gap-6">
+      <div class="font-extrabold h-32 flex justify-center items-center">
+        <img
+          src="https://unavatar.io/github/jonacruz89"
+          alt=""
+          class="w-28 rounded-full"
+        />
+      </div>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">{i18n.ABOUT_ME}</h2>
+        <p class="text-pretty">{i18n.ABOUT_ME_TEXT}</p>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">{i18n.SKILLS}</h2>
+        <ul class="*:before:content-['-']">
+          {i18n.SKILLS_LIST.map((skill) => <li> {skill}</li>)}
+        </ul>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">{i18n.LANGUAGES}</h2>
+        <ul class="*:before:content-['-']">
+          {i18n.LANGUAGES_LIST.map((skill) => <li> {skill}</li>)}
+        </ul>
+      </article>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">
+          {i18n.CONTACT}
+        </h2>
+        {i18n.CONTACT_LIST.map(({ href, text }) => <a href={href}>{text}</a>)}
+      </article>
+    </section>
+
+    <section class="p-5 flex flex-col gap-6">
+      <div class="h-32 flex flex-col justify-center items-center">
+        <p class="text-gray-500">{i18n.DEGREE}</p>
+        <p class="text-4xl">{i18n.NAME}</p>
+      </div>
+
+      <article class="flex flex-col gap-3">
+        <h2 class="underline text-blue-600 font-bold">{i18n.EXPERIENCE}</h2>
+
+        {
+          i18n.EXPERIENCE_LIST.map(
+            ({ position, company, location, date, tasks }) => (
+              <>
+                <div class="flex justify-between items-center">
+                  <span>
+                    {position} <br />
+                    <span class="text-gray-500">
+                      {" "}
+                      {company} {location}
+                    </span>
+                  </span>
+                  <span>{date}</span>
+                </div>
+                <ul class="*:before:content-['-'] text-gray-500">
+                  {tasks.map((task) => (
+                    <li> {task}</li>
+                  ))}
+                </ul>
+              </>
+            )
+          )
+        }
+
+        <article class="flex flex-col gap-3">
+          <h2 class="underline text-blue-600 font-bold">{i18n.EDUCATION}</h2>
+
+          {
+            i18n.EDUCATION_LIST.map(
+              ({ degree, institution, location, date }) => (
+                <div class="flex justify-between items-center">
+                  <span>
+                    {degree} <br />
+                    <span class="text-gray-500">
+                      {institution} {location}
+                    </span>
+                  </span>
+                  <span>{date}</span>
+                </div>
+              )
+            )
+          }
+        </article>
+      </article>
+    </section>
+  </main>
+
+  <style>
+    .left-side {
+      background-color: var(--color-primary);
+    }
+  </style>
+</Layout>

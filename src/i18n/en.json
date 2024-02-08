@@ -1,0 +1,111 @@
+{
+  "ABOUT_ME": "About me",
+  "ABOUT_ME_TEXT": "I am a software engineer with a passion for web development. I have experience in developing web applications using modern technologies such as React, Node.js, and MongoDB. I am also familiar with cloud services such as AWS and Azure. I am a quick learner and I am always looking for new challenges to improve my skills.",
+  "SKILLS": "Skills",
+  "SKILLS_LIST": [
+    " Software Development",
+    " Adaptability",
+    " Teamwork",
+    " Interpersonal Communication",
+    " PHP, MySQL, NodeJS, Laravel",
+    " JavaScript, CSS, HTML, Bootstrap, ReactJS",
+    " AWS, Docker, DDD, CQRS, Linux Command Line",
+    " Git, Github Actions, DevOps"
+  ],
+  "LANGUAGES": "Languages",
+  "LANGUAGES_LIST": ["Español | Nativo", "Inglés | Básico"],
+  "CONTACT": "Contact Information",
+  "CONTACT_LIST": [
+    {
+      "href": "mailto:jonathan.cruz89@gmail.com",
+      "text": "✉ jonathan.cruz89@gmail.com"
+    },
+    {
+      "href": "https://wa.me/573053835010",
+      "text": "📱 (+57) 305 383 50 10"
+    }
+  ],
+  "SOCIAL_NETWORKS": "Social Networks",
+  "SOCIAL_NETWORKS_LIST": [
+    {
+      "href": "https://www.linkedin.com/in/jonathan-cruz89",
+      "icon": "🔗 LinkedIn"
+    },
+    {
+      "href": "https://github.com/jonacruz89",
+      "icon": "🔗 Github"
+    }
+  ],
+  "DEGREE": "Software Engineer",
+  "NAME": "Jonathan Cruz",
+  "EXPERIENCE": "Experience",
+  "EXPERIENCE_LIST": [
+    {
+      "position": "BACKEND DEVELOPER SENIOR",
+      "company": "LAIKA.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "AGO 2022 - DIC 2022",
+      "tasks": [
+        "Proactive participation in meetings focused on creating new practices.",
+        "Automation in the creation and updating of products on marketplaces such as Mercado Libre and Shopify.",
+        "Create and implement software for the connection of multiple stores that want to sell their products through the company."
+      ]
+    },
+    {
+      "position": "SOFTWARE ENGINEER",
+      "company": "SELLRS.",
+      "location": "CIUDAD DE MÉXICO (CDMX), MÉXICO.",
+      "date": "ENE 2022 - JUL 2022",
+      "tasks": [
+        "Create product management system, manually (Google Drive) and automatically (Mercado Libre, Shopify)",
+        "Execute the full Software Development Life Cycle (SDLC).",
+        "Develop flowcharts, layouts, and documentation to identify requirements and solutions.",
+        "Write well designed and testable code.",
+        "Produce specifications and determine operational feasibility.",
+        "Integrate software components into a fully functional software system.",
+        "Develop software verification plans and quality assurance procedures.",
+        "Document and maintain software functionality.",
+        "Troubleshoot, debug, and upgrade existing systems.",
+        "Deploy programs and evaluate user feedback.",
+        "Comply with project plans and industry standards.",
+        "Make sure the software is up to date with the latest features."
+      ]
+    },
+    {
+      "position": "BACKEND AND INTEGRATIONS DEVELOPER",
+      "company": "LORO.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "MAY 2020 - DIC 2021",
+      "tasks": [
+        "Make adjustments, improvements, and new developments on the backend, integrating with the app and web through APIs, managing cron jobs, optimizing code.",
+        "Implement ReactPHP for asynchronous uploads and stock updates.",
+        "Establish connections with Vtex, Woocommerce, and databases for stock loading and updating.",
+        "Implement automatic and massive product categorization and subcategorization."
+      ]
+    },
+    {
+      "position": "SENIOR DEVELOPER",
+      "company": "BRM.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "JUL 2019 - MAR 2020",
+      "tasks": [
+        "Raise, Manage and Develop the necessary requirements for each project that was entrusted to me, leading a team of junior developers and leading said projects"
+      ]
+    }
+  ],
+  "EDUCATION": "Academic Education",
+  "EDUCATION_LIST": [
+    {
+      "degree": "SOFTWARE ENGINEER",
+      "institution": "POLITÉCNICO GRANCOLOMBIANO.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "2019 - 2022"
+    },
+    {
+      "degree": "INFORMATION SECURITY",
+      "institution": "UNIPANAMERICANA.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "JUN 2017 - JUL 2017"
+    }
+  ]
+}

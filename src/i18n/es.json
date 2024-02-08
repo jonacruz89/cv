@@ -1,0 +1,111 @@
+{
+  "ABOUT_ME": "Acerca de mí",
+  "ABOUT_ME_TEXT": "Ingeniero de software con más de 5 años de experiencia en aplicaciones comerciales, multiniveles, tiendas online, pasarelas de pago,criptomonedas y chats. Siempre buscando mejorar los procesos y automatizar las tareas para obtener un rendimiento mucho mayor.",
+  "SKILLS": "Habilidades",
+  "SKILLS_LIST": [
+    "Desarrollo de software",
+    "Adaptabilidad",
+    "Trabajo en equipo",
+    "Comunicación interpersonal",
+    "PHP, MySQL, NodeJS, Larave",
+    "JavaScript, CSS, HTML, Bootstrap, ReactJS",
+    "AWS, Docker, DDD, CQRS, Linux Command Line",
+    "Git, Github Actions, DevOps"
+  ],
+  "LANGUAGES": "Idiomas",
+  "LANGUAGES_LIST": ["Español | Nativo", "Inglés | Básico"],
+  "CONTACT": "Información de Contacto",
+  "CONTACT_LIST": [
+    {
+      "href": "mailto:jonathan.cruz89@gmail.com",
+      "text": "✉ jonathan.cruz89@gmail.com"
+    },
+    {
+      "href": "https://wa.me/573053835010",
+      "text": "📱 (+57) 305 383 50 10"
+    }
+  ],
+  "SOCIAL_NETWORKS": "Redes Sociales",
+  "SOCIAL_NETWORKS_LIST": [
+    {
+      "href": "https://www.linkedin.com/in/jonathan-cruz89",
+      "icon": "🔗 LinkedIn"
+    },
+    {
+      "href": "https://github.com/jonacruz89",
+      "icon": "🔗 Github"
+    }
+  ],
+  "DEGREE": "Ingeniero de Software",
+  "NAME": "Jonathan Cruz",
+  "EXPERIENCE": "Experiencia",
+  "EXPERIENCE_LIST": [
+    {
+      "position": "BACKEND DEVELOPER SENIOR",
+      "company": "LAIKA.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "AGO 2022 - DIC 2022",
+      "tasks": [
+        "Participación proactiva en encuentros orientados a la creación de nuevas prácticas.",
+        "Automatización en la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
+        "Crear e implementar software para la conexión de múltiples tiendas que quieran vender sus productos a través de la empresa."
+      ]
+    },
+    {
+      "position": "SOFTWARE ENGINEER",
+      "company": "SELLRS.",
+      "location": "CIUDAD DE MÉXICO (CDMX), MÉXICO.",
+      "date": "ENE 2022 - JUL 2022",
+      "tasks": [
+        "Crear sistema de gestión de productos, de forma manual (Google Drive) y automática (Mercado Libre, Shopify).",
+        "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
+        "Desarrolle diagramas de flujo, diseños y documentación para identificar requisitos y soluciones.",
+        "Escribir código bien diseñado y comprobable.",
+        "Producir especificaciones y determinar la viabilidad operativa.",
+        "Integre componentes de software en un sistema de software totalmente funcional.",
+        "Desarrollar planes de verificación de software y procedimientos de aseguramiento de la calidad.",
+        "Documente y mantenga la funcionalidad del software.",
+        "Resuelva problemas, depure y actualice los sistemas existentes.",
+        "Implemente programas y evalúe los comentarios de los usuarios.",
+        "Cumplir con los planes del proyecto y los estándares de la industria.",
+        "Asegúrese de que el software esté actualizado con las funciones más recientes."
+      ]
+    },
+    {
+      "position": "BACKEND AND INTEGRATIONS DEVELOPER",
+      "company": "LORO.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "MAY 2020 - DIC 2021",
+      "tasks": [
+        "Realizar ajustes, mejoras, nuevos desarrollos en la parte trasera, integrando con app y web a través de apis, gestionando cron job, optimizando código.",
+        "Implemente ReactPHP para realizar cargas asincrónicas y actualizaciones de stock.",
+        "Realizar conexiones con Vtex, Woocommerce y bases de datos para carga y actualización de stock.",
+        "Implementar la categorización y subcategorización automática y masiva de productos."
+      ]
+    },
+    {
+      "position": "SENIOR DEVELOPER",
+      "company": "BRM.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "JUL 2019 - MAR 2020",
+      "tasks": [
+        "Levantar, Gestionar y Desarrollar los requerimientos necesarios para cada proyecto que me fue encomendado, liderando un equipo de desarrolladores junior y liderando dichos proyectos."
+      ]
+    }
+  ],
+  "EDUCATION": "Formación académica",
+  "EDUCATION_LIST": [
+    {
+      "degree": "INGENIERO DE SOFTWARE",
+      "institution": "POLITÉCNICO GRANCOLOMBIANO.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "2019 - 2022"
+    },
+    {
+      "degree": "SEGURIDAD INFORMÁTICA",
+      "institution": "UNIPANAMERICANA.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "JUN 2017 - JUL 2017"
+    }
+  ]
+}
