@@ -21,4 +21,5 @@ pnpm-debug.log*
 .DS_Store
 .vercel
 
+package-lock.json
 pnpm-lock.yaml

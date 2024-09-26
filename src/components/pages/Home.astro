@@ -5,6 +5,14 @@ import { getI18N } from "@/i18n";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const badgeVariants = {
+  primary: "bg-blue-100 text-blue-800 hover:bg-blue-200",
+  secondary: "bg-purple-100 text-purple-800 hover:bg-purple-200",
+  success: "bg-green-100 text-green-800 hover:bg-green-200",
+  warning: "bg-yellow-100 text-yellow-800 hover:bg-yellow-200"
+}
+
 ---
 
 <Layout title="Jonathan Cruz - CV">
@@ -75,7 +83,7 @@ const i18n = getI18N({ currentLocale });
 
         {
           i18n.EXPERIENCE_LIST.map(
-            ({ position, company, location, date, tasks }) => (
+            ({ position, company, location, date, tasks, skills }) => (
               <>
                 <div class="flex justify-between items-center">
                   <span>
@@ -87,9 +95,18 @@ const i18n = getI18N({ currentLocale });
                   </span>
                   <span>{date}</span>
                 </div>
-                <ul class="*:before:content-['-'] text-gray-500">
+
+                <ul class="*:before:content-['*'] text-gray-500">
                   {tasks.map((task) => (
                     <li> {task}</li>
+                  ))}
+                </ul>
+
+                <ul class="flex flex-wrap gap-1">
+                  {skills.map((skill) => (
+                    <li class={`inline-flex items-center px-2 py-1 rounded-full text-[10px] font-medium transition-colors duration-200 ease-in-out ${badgeVariants.primary}`}>
+                      {skill}
+                    </li>
                   ))}
                 </ul>
               </>

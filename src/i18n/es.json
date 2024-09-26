@@ -7,10 +7,14 @@
     "Adaptabilidad",
     "Trabajo en equipo",
     "Comunicación interpersonal",
-    "PHP, MySQL, NodeJS, Larave",
-    "JavaScript, CSS, HTML, Bootstrap, ReactJS",
-    "AWS, Docker, DDD, CQRS, Linux Command Line",
-    "Git, Github Actions, DevOps"
+    "PHP, C#, Python",
+    "Laravel, Symfony, Django",
+    "NodeJS, NextJS, Astro, NestJS",
+    "JS, CSS, HTML",
+    "ReactJS, VueJS, Angular",
+    "AWS, Azure, Cloudfare",
+    "Docker, Git, Github Actions",
+    "DDD, CQRS, CLI, SOLID"
   ],
   "LANGUAGES": "Idiomas",
   "LANGUAGES_LIST": ["Español | Nativo", "Inglés | Básico"],
@@ -49,6 +53,24 @@
         "Análisis y desarrollo de software, mantenimiento de aplicaciones.",
         "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
         "Escribir código bien diseñado y comprobable."
+      ],
+      "skills": [
+        "PHP",
+        "Laravel",
+        "C#",
+        "Python",
+        "Django",
+        "NodeJS",
+        "NestJS",
+        "ReactJS",
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL",
+        "AWS",
+        "Azure",
+        "Docker",
+        "Github Actions",
+        "React Native"
       ]
     },
     {
@@ -63,6 +85,15 @@
         "Asistir a las reuniones que se requieran de los desarrollos para planear, definir, entregar, etc.",
         "Capacitar al personal requerido sobre las aplicaciones.",
         "Efectuar entregas formales de las construcciones de software."
+      ],
+      "skills": [
+        "PHP",
+        "Symfony",
+        "NodeJS",
+        "ReactJS",
+        "MySQL",
+        "Docker",
+        "Github Actions"
       ]
     },
     {
@@ -74,6 +105,14 @@
         "Participación proactiva en encuentros orientados a la creación de nuevas prácticas.",
         "Automatización en la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
         "Crear e implementar software para la conexión de múltiples tiendas que quieran vender sus productos a través de la empresa."
+      ],
+      "skills": [
+        "PHP",
+        "Laravel",
+        "GraphQL",
+        "MySQL",
+        "Docker",
+        "Github Actions"
       ]
     },
     {
@@ -94,6 +133,14 @@
         "Implemente programas y evalúe los comentarios de los usuarios.",
         "Cumplir con los planes del proyecto y los estándares de la industria.",
         "Asegúrese de que el software esté actualizado con las funciones más recientes."
+      ],
+      "skills": [
+        "PHP",
+        "Symfony",
+        "ReactJS",
+        "MySQL",
+        "Docker",
+        "Github Actions"
       ]
     },
     {
@@ -106,7 +153,8 @@
         "Implemente ReactPHP para realizar cargas asincrónicas y actualizaciones de stock.",
         "Realizar conexiones con Vtex, Woocommerce y bases de datos para carga y actualización de stock.",
         "Implementar la categorización y subcategorización automática y masiva de productos."
-      ]
+      ],
+      "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions"]
     },
     {
       "position": "SENIOR DEVELOPER",
@@ -115,6 +163,18 @@
       "date": "JUL 2019 - MAR 2020",
       "tasks": [
         "Levantar, Gestionar y Desarrollar los requerimientos necesarios para cada proyecto que me fue encomendado, liderando un equipo de desarrolladores junior y liderando dichos proyectos."
+      ],
+      "skills": [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Docker",
+        "Github Actions",
+        "IoT",
+        "Wordpress",
+        "ReactJS",
+        "Angular",
+        "React Native"
       ]
     }
   ],
