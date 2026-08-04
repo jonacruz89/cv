@@ -46,9 +46,28 @@
   "EXPERIENCE_LIST": [
     {
       "position": "FULLSTACK ENGINEER",
+      "company": "GRUPO SVEACOL.",
+      "location": "BOGOTÁ, COLOMBIA.",
+      "date": "NOV 2024 - PRESENT",
+      "tasks": ["Software analysis and development, application maintenance."],
+      "skills": [
+        "PHP",
+        "Laravel",
+        "C#",
+        "NodeJS",
+        "ReactJS",
+        "MySQL",
+        "PostgreSQL",
+        "Azure",
+        "Docker",
+        "Github Actions"
+      ]
+    },
+    {
+      "position": "FULLSTACK ENGINEER",
       "company": "TECHGENIES.",
       "location": "BOGOTÁ, COLOMBIA.",
-      "date": "SEPT 2023 - PRESENT",
+      "date": "SEPT 2023 - SEPT 2024",
       "tasks": [
         "Software analysis and development, application maintenance.",
         "Execute the full Software Development Life Cycle (SDLC).",
