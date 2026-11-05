@@ -32,18 +32,29 @@
       "en": "I am a software engineer with a passion for web development. I have experience in developing web applications using modern technologies such as React, Node.js, PHP, C# and MongoDB. I am also familiar with cloud services such as AWS and Azure. I am a quick learner and I am always looking for new challenges to improve my skills."
     },
     "profiles": [
-      { "network": "LinkedIn", "username": "jonacruz89", "url": "https://www.linkedin.com/in/jonacruz89" },
-      { "network": "GitHub", "username": "jonacruz89", "url": "https://github.com/jonacruz89" }
+      {
+        "network": "LinkedIn",
+        "username": "jonacruz89",
+        "url": "https://www.linkedin.com/in/jonacruz89"
+      },
+      {
+        "network": "GitHub",
+        "username": "jonacruz89",
+        "url": "https://github.com/jonacruz89"
+      }
     ]
   },
   "work": [
     {
-      "company": "Grupo Sveacol",
+      "company": "Grupo Sveacol - Pagui",
       "position": "Fullstack Engineer",
       "location": "Bogotá, Colombia",
       "startDate": "2024-11",
+      "endDate": "2026-07",
       "highlights": {
-        "es": ["Análisis y desarrollo de software, mantenimiento de aplicaciones."],
+        "es": [
+          "Análisis y desarrollo de software, mantenimiento de aplicaciones."
+        ],
         "en": ["Software analysis and development, application maintenance."]
       },
       "skills": [
@@ -120,11 +131,22 @@
           "Formally deliver the software constructions."
         ]
       },
-      "skills": ["PHP", "Symfony", "NodeJS", "ReactJS", "MySQL", "Docker", "Github Actions"]
+      "skills": [
+        "PHP",
+        "Symfony",
+        "NodeJS",
+        "ReactJS",
+        "MySQL",
+        "Docker",
+        "Github Actions"
+      ]
     },
     {
       "company": "Laika",
-      "position": { "es": "Backend Developer Senior", "en": "Senior Backend Developer" },
+      "position": {
+        "es": "Backend Developer Senior",
+        "en": "Senior Backend Developer"
+      },
       "location": "Bogotá, Colombia",
       "startDate": "2022-08",
       "endDate": "2022-12",
@@ -140,12 +162,22 @@
           "Create and implement software for the connection of multiple stores that want to sell their products through the company."
         ]
       },
-      "skills": ["PHP", "Laravel", "GraphQL", "MySQL", "Docker", "Github Actions"]
+      "skills": [
+        "PHP",
+        "Laravel",
+        "GraphQL",
+        "MySQL",
+        "Docker",
+        "Github Actions"
+      ]
     },
     {
       "company": "Sellrs",
       "position": "Software Engineer",
-      "location": { "es": "Ciudad de México, México", "en": "Mexico City, Mexico" },
+      "location": {
+        "es": "Ciudad de México, México",
+        "en": "Mexico City, Mexico"
+      },
       "startDate": "2022-01",
       "endDate": "2022-07",
       "highlights": {
@@ -178,11 +210,21 @@
           "Make sure the software is up to date with the latest features."
         ]
       },
-      "skills": ["PHP", "Symfony", "ReactJS", "MySQL", "Docker", "Github Actions"]
+      "skills": [
+        "PHP",
+        "Symfony",
+        "ReactJS",
+        "MySQL",
+        "Docker",
+        "Github Actions"
+      ]
     },
     {
       "company": "Loro",
-      "position": { "es": "Desarrollador Backend e Integraciones", "en": "Backend and Integrations Developer" },
+      "position": {
+        "es": "Desarrollador Backend e Integraciones",
+        "en": "Backend and Integrations Developer"
+      },
       "location": "Bogotá, Colombia",
       "startDate": "2020-05",
       "endDate": "2021-12",
@@ -261,7 +303,14 @@
     },
     {
       "name": { "es": "Nube y DevOps", "en": "Cloud & DevOps" },
-      "keywords": ["AWS", "Azure", "Cloudflare", "Docker", "Git", "GitHub Actions"]
+      "keywords": [
+        "AWS",
+        "Azure",
+        "Cloudflare",
+        "Docker",
+        "Git",
+        "GitHub Actions"
+      ]
     },
     {
       "name": { "es": "Arquitectura", "en": "Architecture" },
@@ -270,7 +319,11 @@
     {
       "name": { "es": "Habilidades blandas", "en": "Soft skills" },
       "keywords": {
-        "es": ["Adaptabilidad", "Trabajo en equipo", "Comunicación interpersonal"],
+        "es": [
+          "Adaptabilidad",
+          "Trabajo en equipo",
+          "Comunicación interpersonal"
+        ],
         "en": ["Adaptability", "Teamwork", "Interpersonal communication"]
       }
     }
