@@ -42,6 +42,19 @@ export function formatRange (start: string | undefined, end: string | undefined,
   return from || to
 }
 
+/** Whole years since the earliest visible job, computed at build time. */
+const yearsOfExperience = (() => {
+  const starts = data.work.filter((w) => !w.hidden).map((w) => w.startDate).sort()
+  if (!starts.length) return 0
+  const [y, m = '1'] = starts[0].split('-')
+  const now = new Date()
+  const months = (now.getFullYear() - Number(y)) * 12 + (now.getMonth() + 1 - Number(m))
+  return Math.floor(months / 12)
+})()
+
+/** Replaces "{years}" in texts so "más de {years} años" never goes stale. */
+const fillYears = (text: string | undefined) => text?.replaceAll('{years}', String(yearsOfExperience))
+
 /** Cut at a word boundary and add "…" when longer than `max`. */
 function truncate (text: string, max: number): string {
   if (text.length <= max) return text
@@ -76,14 +89,14 @@ export function getCv (locale: Locale) {
     }))
   ].filter((item) => !!item)
 
-  const summary = pickOptional(basics.summary, locale)
+  const summary = fillYears(pickOptional(basics.summary, locale))
 
   return {
     locale,
     labels: ui[locale],
     settings,
     seo: {
-      description: pickOptional(settings.seo.description, locale) ?? truncate(summary ?? pick(basics.label, locale), 155)
+      description: fillYears(pickOptional(settings.seo.description, locale)) ?? truncate(summary ?? pick(basics.label, locale), 155)
     },
     basics: {
       name: basics.name,

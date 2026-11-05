@@ -7,8 +7,8 @@
     "monogram": "JC",
     "seo": {
       "description": {
-        "es": "Ingeniero de software fullstack con más de 5 años de experiencia en PHP, Laravel, Node.js, React y la nube (AWS, Azure). Bogotá, Colombia.",
-        "en": "Fullstack software engineer with 5+ years of experience in PHP, Laravel, Node.js, React and the cloud (AWS, Azure). Based in Bogotá, Colombia."
+        "es": "Ingeniero de software fullstack con más de {years} años de experiencia en PHP, Laravel, Node.js, React y la nube (AWS, Azure). Bogotá, Colombia.",
+        "en": "Fullstack software engineer with {years}+ years of experience in PHP, Laravel, Node.js, React and the cloud (AWS, Azure). Based in Bogotá, Colombia."
       }
     },
     "modern": {
@@ -22,14 +22,17 @@
   },
   "basics": {
     "name": "Jonathan Cruz",
-    "label": { "es": "Ingeniero de Software", "en": "Software Engineer" },
+    "label": {
+      "es": "Ingeniero de Software Fullstack",
+      "en": "Fullstack Software Engineer"
+    },
     "email": "jonathan.cruz89@gmail.com",
     "phone": "+57 305 383 5010",
     "whatsapp": "573053835010",
     "location": "Bogotá, Colombia",
     "summary": {
-      "es": "Ingeniero de software con más de 5 años de experiencia en aplicaciones comerciales, multiniveles, tiendas online, pasarelas de pago, criptomonedas y chats. Siempre buscando mejorar los procesos y automatizar las tareas para obtener un rendimiento mucho mayor.",
-      "en": "I am a software engineer with a passion for web development. I have experience in developing web applications using modern technologies such as React, Node.js, PHP, C# and MongoDB. I am also familiar with cloud services such as AWS and Azure. I am a quick learner and I am always looking for new challenges to improve my skills."
+      "es": "Ingeniero de software fullstack con más de {years} años de experiencia construyendo comercio electrónico, integraciones con marketplaces, pasarelas de pago, plataformas multinivel (MLM), criptomonedas y chat. Trabajo principalmente con PHP (Laravel, Symfony), Node.js, C# y React sobre AWS y Azure. Me enfoco en automatizar procesos y en entregar software mantenible que crezca con el negocio.",
+      "en": "Fullstack software engineer with {years}+ years of experience building e-commerce, marketplace integrations, payment gateways, multi-level marketing platforms (MLM), cryptocurrency and chat applications. I work mainly with PHP (Laravel, Symfony), Node.js, C# and React on AWS and Azure, with a focus on automating processes and delivering maintainable software that grows with the business."
     },
     "profiles": [
       {
@@ -78,14 +81,16 @@
       "endDate": "2024-09",
       "highlights": {
         "es": [
-          "Análisis y desarrollo de software, mantenimiento de aplicaciones.",
-          "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
-          "Escribir código bien diseñado y comprobable."
+          "Desarrollé aplicaciones web y móviles (React, React Native) con backends en Laravel, Django, NestJS y C#.",
+          "Participé en todo el ciclo de vida del software: análisis, diseño, desarrollo, pruebas y despliegue.",
+          "Trabajé con bases de datos relacionales y NoSQL (MySQL, PostgreSQL, MongoDB) e infraestructura en AWS y Azure.",
+          "Mantuve y mejoré aplicaciones en producción, priorizando código limpio y testeable."
         ],
         "en": [
-          "Software analysis and development, application maintenance.",
-          "Execute the full Software Development Life Cycle (SDLC).",
-          "Write well designed and testable code."
+          "Built web and mobile applications (React, React Native) backed by Laravel, Django, NestJS and C#.",
+          "Worked across the full software development life cycle: analysis, design, development, testing and deployment.",
+          "Worked with relational and NoSQL databases (MySQL, PostgreSQL, MongoDB) and infrastructure on AWS and Azure.",
+          "Maintained and improved production applications with a focus on clean, testable code."
         ]
       },
       "skills": [
@@ -115,20 +120,16 @@
       "endDate": "2023-08",
       "highlights": {
         "es": [
-          "Análisis y desarrollo de software, mantenimiento de aplicaciones.",
-          "Elaborar informes y documentación correspondientes a los desarrollos.",
-          "Asistir en las implementaciones de las aplicaciones.",
-          "Asistir a las reuniones que se requieran de los desarrollos para planear, definir, entregar, etc.",
-          "Capacitar al personal requerido sobre las aplicaciones.",
-          "Efectuar entregas formales de las construcciones de software."
+          "Desarrollé y mantuve aplicaciones con Symfony, Node.js y React.",
+          "Acompañé la puesta en producción de cada desarrollo y realicé las entregas formales al cliente.",
+          "Elaboré la documentación técnica y funcional, y capacité a los usuarios en las nuevas herramientas.",
+          "Participé en la planeación y definición del alcance con el equipo y los usuarios."
         ],
         "en": [
-          "Software analysis and development, application maintenance.",
-          "Prepare reports and documentation corresponding to the developments.",
-          "Assist in the implementation of the applications.",
-          "Attend meetings required for the developments to plan, define, deliver, etc.",
-          "Train the required personnel on the applications.",
-          "Formally deliver the software constructions."
+          "Built and maintained applications with Symfony, Node.js and React.",
+          "Supported every release to production and handled formal deliveries to the client.",
+          "Wrote technical and functional documentation and trained users on the new tools.",
+          "Took part in planning and scoping with the team and stakeholders."
         ]
       },
       "skills": [
@@ -152,14 +153,14 @@
       "endDate": "2022-12",
       "highlights": {
         "es": [
-          "Participación proactiva en encuentros orientados a la creación de nuevas prácticas.",
-          "Automatización en la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
-          "Crear e implementar software para la conexión de múltiples tiendas que quieran vender sus productos a través de la empresa."
+          "Automaticé la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
+          "Desarrollé integraciones con Laravel y GraphQL para conectar múltiples tiendas que venden sus productos a través de la plataforma.",
+          "Propuse y ayudé a adoptar nuevas prácticas de desarrollo en el equipo."
         ],
         "en": [
-          "Proactive participation in meetings focused on creating new practices.",
-          "Automation in the creation and updating of products on marketplaces such as Mercado Libre and Shopify.",
-          "Create and implement software for the connection of multiple stores that want to sell their products through the company."
+          "Automated product creation and updates on marketplaces such as Mercado Libre and Shopify.",
+          "Built Laravel and GraphQL integrations that connect multiple stores selling their products through the platform.",
+          "Proposed and helped adopt new development practices within the team."
         ]
       },
       "skills": [
@@ -182,32 +183,16 @@
       "endDate": "2022-07",
       "highlights": {
         "es": [
-          "Crear sistema de gestión de productos, de forma manual (Google Drive) y automática (Mercado Libre, Shopify).",
-          "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
-          "Desarrolle diagramas de flujo, diseños y documentación para identificar requisitos y soluciones.",
-          "Escribir código bien diseñado y comprobable.",
-          "Producir especificaciones y determinar la viabilidad operativa.",
-          "Integre componentes de software en un sistema de software totalmente funcional.",
-          "Desarrollar planes de verificación de software y procedimientos de aseguramiento de la calidad.",
-          "Documente y mantenga la funcionalidad del software.",
-          "Resuelva problemas, depure y actualice los sistemas existentes.",
-          "Implemente programas y evalúe los comentarios de los usuarios.",
-          "Cumplir con los planes del proyecto y los estándares de la industria.",
-          "Asegúrese de que el software esté actualizado con las funciones más recientes."
+          "Construí el sistema de gestión de productos, con carga manual desde Google Drive y sincronización automática con Mercado Libre y Shopify.",
+          "Levanté requisitos y produje diagramas de flujo, especificaciones y análisis de viabilidad para cada solución.",
+          "Integré los componentes en un sistema completo y definí planes de verificación y aseguramiento de calidad.",
+          "Diagnostiqué, depuré y actualicé sistemas existentes a partir de la retroalimentación de los usuarios."
         ],
         "en": [
-          "Create product management system, manually (Google Drive) and automatically (Mercado Libre, Shopify).",
-          "Execute the full Software Development Life Cycle (SDLC).",
-          "Develop flowcharts, layouts, and documentation to identify requirements and solutions.",
-          "Write well designed and testable code.",
-          "Produce specifications and determine operational feasibility.",
-          "Integrate software components into a fully functional software system.",
-          "Develop software verification plans and quality assurance procedures.",
-          "Document and maintain software functionality.",
-          "Troubleshoot, debug, and upgrade existing systems.",
-          "Deploy programs and evaluate user feedback.",
-          "Comply with project plans and industry standards.",
-          "Make sure the software is up to date with the latest features."
+          "Built the product management system, with manual uploads from Google Drive and automatic sync with Mercado Libre and Shopify.",
+          "Gathered requirements and produced flowcharts, specifications and feasibility analyses for each solution.",
+          "Integrated components into a complete system and defined verification and quality assurance plans.",
+          "Diagnosed, debugged and upgraded existing systems based on user feedback."
         ]
       },
       "skills": [
@@ -230,16 +215,16 @@
       "endDate": "2021-12",
       "highlights": {
         "es": [
-          "Realizar ajustes, mejoras, nuevos desarrollos en la parte trasera, integrando con app y web a través de apis, gestionando cron job, optimizando código.",
-          "Implemente ReactPHP para realizar cargas asincrónicas y actualizaciones de stock.",
-          "Realizar conexiones con Vtex, Woocommerce y bases de datos para carga y actualización de stock.",
-          "Implementar la categorización y subcategorización automática y masiva de productos."
+          "Desarrollé nuevas funcionalidades y optimicé el backend que alimenta la app móvil y la web a través de APIs, incluidas las tareas programadas (cron jobs).",
+          "Implementé procesamiento asíncrono con ReactPHP para cargas masivas y actualizaciones de inventario.",
+          "Integré VTEX, WooCommerce y bases de datos externas para sincronizar el inventario.",
+          "Automaticé la categorización y subcategorización masiva de productos."
         ],
         "en": [
-          "Make adjustments, improvements, and new developments on the backend, integrating with the app and web through APIs, managing cron jobs, optimizing code.",
-          "Implement ReactPHP for asynchronous uploads and stock updates.",
-          "Establish connections with Vtex, Woocommerce, and databases for stock loading and updating.",
-          "Implement automatic and massive product categorization and subcategorization."
+          "Built new features and optimized the backend that powers the mobile app and website through APIs, including scheduled jobs (cron).",
+          "Implemented asynchronous processing with ReactPHP for bulk uploads and inventory updates.",
+          "Integrated VTEX, WooCommerce and external databases to keep inventory in sync.",
+          "Automated bulk product categorization and subcategorization."
         ]
       },
       "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions"]
@@ -252,10 +237,14 @@
       "endDate": "2020-03",
       "highlights": {
         "es": [
-          "Levantar, gestionar y desarrollar los requerimientos necesarios para cada proyecto que me fue encomendado, liderando un equipo de desarrolladores junior y liderando dichos proyectos."
+          "Lideré un equipo de desarrolladores junior en proyectos web, móviles e IoT.",
+          "Levanté y gestioné los requerimientos de cada proyecto, desde el análisis hasta la entrega.",
+          "Desarrollé soluciones con Laravel, WordPress, React, Angular y React Native."
         ],
         "en": [
-          "Gather, manage and develop the requirements for each project entrusted to me, leading a team of junior developers and leading those projects."
+          "Led a team of junior developers on web, mobile and IoT projects.",
+          "Gathered and managed requirements for each project, from analysis to delivery.",
+          "Built solutions with Laravel, WordPress, React, Angular and React Native."
         ]
       },
       "skills": [
