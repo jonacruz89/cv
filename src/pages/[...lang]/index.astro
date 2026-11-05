@@ -1,0 +1,13 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Modern from '@/templates/Modern.astro'
+import { getCv, localeStaticPaths, type Locale } from '@/lib/cv'
+
+export const getStaticPaths = localeStaticPaths
+
+const cv = getCv(Astro.props.locale as Locale)
+---
+
+<Layout cv={cv} template="modern">
+  <Modern cv={cv} />
+</Layout>

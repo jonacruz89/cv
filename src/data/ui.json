@@ -1,0 +1,30 @@
+{
+  "es": {
+    "summary": "Acerca de mí",
+    "work": "Experiencia",
+    "education": "Formación académica",
+    "skills": "Habilidades",
+    "languages": "Idiomas",
+    "contact": "Contacto",
+    "present": "Actualidad",
+    "print": "Imprimir / PDF",
+    "modern": "Diseño moderno",
+    "harvard": "Formato Harvard",
+    "markdown": "Markdown",
+    "otherLanguage": "English"
+  },
+  "en": {
+    "summary": "About me",
+    "work": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "languages": "Languages",
+    "contact": "Contact",
+    "present": "Present",
+    "print": "Print / PDF",
+    "modern": "Modern design",
+    "harvard": "Harvard format",
+    "markdown": "Markdown",
+    "otherLanguage": "Español"
+  }
+}

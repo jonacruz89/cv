@@ -1,0 +1,131 @@
+---
+import type { ResolvedCv, SectionId } from '@/lib/cv'
+
+interface Props { cv: ResolvedCv }
+const { cv } = Astro.props
+const { labels, settings, basics } = cv
+const { sections, maxHighlights } = settings.harvard
+const limit = <T,>(list: T[]) => (maxHighlights ? list.slice(0, maxHighlights) : list)
+---
+
+<main class="sheet harvard">
+  <header>
+    <h1>{basics.name}</h1>
+    <p class="contact">
+      {cv.contact.map((c, i) => (
+        <>
+          {i > 0 && <span class="sep" aria-hidden="true"> • </span>}
+          {c.href ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}
+        </>
+      ))}
+    </p>
+  </header>
+
+  {
+    sections.map((id: SectionId) => {
+      switch (id) {
+        case 'summary':
+          return basics.summary && (
+            <section>
+              <h2>{labels.summary}</h2>
+              <p>{basics.summary}</p>
+            </section>
+          )
+        case 'work':
+          return cv.work.length > 0 && (
+            <section>
+              <h2>{labels.work}</h2>
+              {cv.work.map((w) => (
+                <article class="entry">
+                  <div class="row"><strong>{w.company}</strong><span>{w.location}</span></div>
+                  <div class="row"><em>{w.position}</em><span>{w.dates}</span></div>
+                  {w.summary && <p>{w.summary}</p>}
+                  {w.highlights.length > 0 && <ul>{limit(w.highlights).map((h) => <li>{h}</li>)}</ul>}
+                </article>
+              ))}
+            </section>
+          )
+        case 'education':
+          return cv.education.length > 0 && (
+            <section>
+              <h2>{labels.education}</h2>
+              {cv.education.map((e) => (
+                <article class="entry">
+                  <div class="row"><strong>{e.institution}</strong><span>{e.location}</span></div>
+                  <div class="row"><em>{e.area}</em><span>{e.dates}</span></div>
+                  {e.highlights.length > 0 && <ul>{e.highlights.map((h) => <li>{h}</li>)}</ul>}
+                </article>
+              ))}
+            </section>
+          )
+        case 'skills':
+          return cv.skills.length > 0 && (
+            <section>
+              <h2>{labels.skills}</h2>
+              {cv.skills.map((s) => <p class="line"><strong>{s.name}:</strong> {s.keywords.join(', ')}</p>)}
+            </section>
+          )
+        case 'languages':
+          return cv.languages.length > 0 && (
+            <section>
+              <h2>{labels.languages}</h2>
+              <p class="line">{cv.languages.map((l) => `${l.language} (${l.fluency})`).join('; ')}</p>
+            </section>
+          )
+        default:
+          return null // contact always lives in the header
+      }
+    })
+  }
+</main>
+
+<style>
+  .harvard {
+    font-family: var(--font-serif);
+    font-size: 10.5pt;
+    line-height: 1.35;
+    padding: 0.6in 0.75in;
+  }
+  header { text-align: center; margin-bottom: 0.6rem; }
+  h1 { font-size: 20pt; font-weight: 700; letter-spacing: 0.02em; }
+  .contact { font-size: 9.5pt; margin-top: 0.2rem; }
+  .contact a { color: inherit; text-decoration: none; }
+  section { margin-top: 0.7rem; }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #111;
+    padding-bottom: 1px;
+    margin-bottom: 0.35rem;
+  }
+  .entry { margin-bottom: 0.5rem; }
+  .row { display: flex; justify-content: space-between; gap: 1rem; }
+  .row span { white-space: nowrap; }
+  ul { list-style: disc; padding-left: 1.25rem; margin-top: 0.15rem; }
+  .line { margin-bottom: 0.1rem; }
+
+  @media screen and (max-width: 700px) {
+    .harvard { padding: 1.5rem 1rem; }
+    .row { flex-wrap: wrap; gap: 0 1rem; }
+  }
+
+  @media print {
+    /* Page margin is 0 so the browser has no room for its date/URL header and footer;
+       this padding recreates the margins and repeats on every page */
+    .harvard {
+      padding: 0.6in 0.75in;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .entry { break-inside: avoid; }
+    h2 { break-after: avoid; }
+  }
+</style>
+
+<style is:global>
+  @media print {
+    @page { margin: 0; }
+  }
+</style>

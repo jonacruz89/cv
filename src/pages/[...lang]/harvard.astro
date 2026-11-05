@@ -1,0 +1,13 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Harvard from '@/templates/Harvard.astro'
+import { getCv, localeStaticPaths, type Locale } from '@/lib/cv'
+
+export const getStaticPaths = localeStaticPaths
+
+const cv = getCv(Astro.props.locale as Locale)
+---
+
+<Layout cv={cv} template="harvard">
+  <Harvard cv={cv} />
+</Layout>

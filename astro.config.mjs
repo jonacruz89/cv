@@ -1,22 +1,10 @@
+// @ts-check
 import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
+import tailwindcss from '@tailwindcss/vite'
 
-import vercel from '@astrojs/vercel/serverless'
-
-// https://astro.build/config
+// Static site: Vercel detects Astro and serves dist/ with no adapter needed.
 export default defineConfig({
-  integrations: [tailwind()],
-  i18n: {
-    defaultLocale: 'es',
-    locales: ['es', 'en'],
-    routing: {
-      prefixDefaultLocale: false
-    }
-  },
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true
-    }
-  })
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })

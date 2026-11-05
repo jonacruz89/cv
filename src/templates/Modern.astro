@@ -1,0 +1,220 @@
+---
+import type { ResolvedCv, SectionId } from '@/lib/cv'
+
+interface Props { cv: ResolvedCv }
+const { cv } = Astro.props
+const { labels, settings, basics } = cv
+const { sidebar, main, showWorkSkills } = settings.modern
+
+const icons: Record<string, string> = { linkedin: '/linkedin.svg', github: '/github.svg' }
+const contactIcon = { email: '✉', phone: '☎', location: '⌂', website: '🔗', profile: '↗' }
+const contact = cv.contact.filter((c) => c.kind !== 'profile')
+const monogram = settings.monogram ?? basics.name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2)
+---
+
+{/* A section can be placed in the sidebar or the main column via settings.modern in cv.json */}
+{
+  (() => {
+    const render = (id: SectionId) => {
+      switch (id) {
+        case 'summary':
+          return basics.summary && (
+            <section class="section">
+              <h2>{labels.summary}</h2>
+              <p class="text-pretty">{basics.summary}</p>
+            </section>
+          )
+        case 'skills':
+          return cv.skills.length > 0 && (
+            <section class="section">
+              <h2>{labels.skills}</h2>
+              <ul class="flex flex-col gap-1.5">
+                {cv.skills.map((s) => (
+                  <li>
+                    <span class="font-bold">{s.name}</span>
+                    <br />
+                    <span class="text-gray-600">{s.keywords.join(', ')}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        case 'languages':
+          return cv.languages.length > 0 && (
+            <section class="section">
+              <h2>{labels.languages}</h2>
+              <ul>
+                {cv.languages.map((l) => <li>- {l.language} | {l.fluency}</li>)}
+              </ul>
+            </section>
+          )
+        case 'contact':
+          return (
+            <section class="section">
+              <h2>{labels.contact}</h2>
+              <ul class="flex flex-col gap-1 break-all">
+                {contact.map((c) => (
+                  <li>
+                    <span aria-hidden="true">{contactIcon[c.kind]} </span>
+                    {c.href ? <a href={c.href} target="_blank" rel="noopener">{c.label}</a> : c.label}
+                  </li>
+                ))}
+                {basics.profiles.map((p) => (
+                  <li class="print-only">
+                    <span aria-hidden="true">{contactIcon.profile} </span>{p.url.replace(/^https?:\/\/(www\.)?/, '')}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        case 'work':
+          return cv.work.length > 0 && (
+            <section class="section">
+              <h2>{labels.work}</h2>
+              {cv.work.map((w) => (
+                <article class="entry flex flex-col gap-1.5">
+                  <div class="flex justify-between items-start gap-3">
+                    <p>
+                      <span class="uppercase">{w.position}</span>
+                      <br />
+                      <span class="text-gray-500 uppercase">{w.company}{w.location && ` · ${w.location}`}</span>
+                    </p>
+                    <span class="uppercase whitespace-nowrap">{w.dates}</span>
+                  </div>
+                  {w.summary && <p class="text-gray-600">{w.summary}</p>}
+                  {w.highlights.length > 0 && (
+                    <ul class="text-gray-500 *:before:content-['*_']">
+                      {w.highlights.map((h) => <li>{h}</li>)}
+                    </ul>
+                  )}
+                  {showWorkSkills && w.skills.length > 0 && (
+                    <ul class="flex flex-wrap gap-1">
+                      {w.skills.map((s) => <li class="badge">{s}</li>)}
+                    </ul>
+                  )}
+                </article>
+              ))}
+            </section>
+          )
+        case 'education':
+          return cv.education.length > 0 && (
+            <section class="section">
+              <h2>{labels.education}</h2>
+              {cv.education.map((e) => (
+                <article class="entry flex justify-between items-start gap-3">
+                  <p>
+                    <span class="uppercase">{e.area}</span>
+                    <br />
+                    <span class="text-gray-500 uppercase">{e.institution}{e.location && ` · ${e.location}`}</span>
+                  </p>
+                  <span class="uppercase whitespace-nowrap">{e.dates}</span>
+                </article>
+              ))}
+            </section>
+          )
+      }
+    }
+
+    return (
+      <main class="sheet modern font-mono text-xs tracking-tight">
+        <div class="strip" aria-hidden="true"></div>
+
+        <aside class="col sidebar">
+          <div class="h-32 flex justify-center items-center font-extrabold">
+            <span class="text-8xl text-accent">{monogram}</span>
+          </div>
+          {sidebar.map(render)}
+        </aside>
+
+        <div class="col">
+          <header class="h-32 flex flex-col justify-center items-center text-center gap-1">
+            <p class="text-gray-500">{basics.label}</p>
+            <h1 class="text-4xl">{basics.name}</h1>
+            <div class="flex gap-3 no-print">
+              {basics.profiles.map((p) => (
+                <a href={p.url} target="_blank" rel="noopener" title={p.network}>
+                  {icons[p.network.toLowerCase()]
+                    ? <img src={icons[p.network.toLowerCase()]} alt={p.network} width="22" height="22" />
+                    : p.network}
+                </a>
+              ))}
+            </div>
+          </header>
+          {main.map(render)}
+        </div>
+      </main>
+    )
+  })()
+}
+
+<style>
+  .modern {
+    display: grid;
+    grid-template-columns: 70px 1fr 2fr;
+    min-height: 11in;
+  }
+  .strip { background: var(--accent); }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+  .sidebar { border-right: 3px solid #d9d9d9; }
+  .section { display: flex; flex-direction: column; gap: 0.75rem; }
+  .section :global(h2) {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 500;
+    background: color-mix(in srgb, var(--accent) 14%, white);
+    color: color-mix(in srgb, var(--accent) 75%, black);
+  }
+  .print-only { display: none; }
+
+  /* Phones: one column, no strip */
+  @media screen and (max-width: 700px) {
+    .modern { grid-template-columns: 1fr; min-height: 0; }
+    .strip { height: 10px; }
+    .sidebar { border-right: 0; border-bottom: 3px solid #d9d9d9; order: 2; }
+    .sidebar > div:first-child { display: none; }
+  }
+
+  @media print {
+    .modern { min-height: 0; }
+    /* Fixed elements repeat on every printed page, so strip and divider reach the bottom of each sheet */
+    .strip { background: none; }
+    .sidebar { border-right: 0; }
+    .modern::before, .modern::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+    .modern::before { left: 0; width: 70px; background: var(--accent); }
+    .modern::after { left: calc(70px + (100vw - 70px) / 3 - 3px); width: 3px; background: #d9d9d9; }
+    .col {
+      /* Page margin is 0 so the strip bleeds; this padding repeats on every page */
+      padding-top: 0.45in;
+      padding-bottom: 0.45in;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    .entry { break-inside: avoid; }
+    .section :global(h2) { break-after: avoid; }
+    .print-only { display: list-item; list-style: none; }
+  }
+</style>
+
+<style is:global>
+  @media print {
+    @page { margin: 0; }
+  }
+</style>

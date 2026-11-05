@@ -1,0 +1,237 @@
+{
+  "$schema": "./cv.schema.json",
+  "settings": {
+    "defaultLocale": "es",
+    "paper": "letter",
+    "accentColor": "#5754fc",
+    "monogram": "JC",
+    "modern": {
+      "sidebar": ["summary", "skills", "languages", "contact"],
+      "main": ["work", "education"],
+      "showWorkSkills": true
+    },
+    "harvard": {
+      "sections": ["summary", "work", "education", "skills", "languages"]
+    }
+  },
+  "basics": {
+    "name": "Jonathan Cruz",
+    "label": { "es": "Ingeniero de Software", "en": "Software Engineer" },
+    "email": "jonathan.cruz89@gmail.com",
+    "phone": "+57 305 383 5010",
+    "whatsapp": "573053835010",
+    "location": "Bogotá, Colombia",
+    "summary": {
+      "es": "Ingeniero de software con más de 5 años de experiencia en aplicaciones comerciales, multiniveles, tiendas online, pasarelas de pago, criptomonedas y chats. Siempre buscando mejorar los procesos y automatizar las tareas para obtener un rendimiento mucho mayor.",
+      "en": "I am a software engineer with a passion for web development. I have experience in developing web applications using modern technologies such as React, Node.js, PHP, C# and MongoDB. I am also familiar with cloud services such as AWS and Azure. I am a quick learner and I am always looking for new challenges to improve my skills."
+    },
+    "profiles": [
+      { "network": "LinkedIn", "username": "jonacruz89", "url": "https://www.linkedin.com/in/jonacruz89" },
+      { "network": "GitHub", "username": "jonacruz89", "url": "https://github.com/jonacruz89" }
+    ]
+  },
+  "work": [
+    {
+      "company": "Grupo Sveacol",
+      "position": "Fullstack Engineer",
+      "location": "Bogotá, Colombia",
+      "startDate": "2024-11",
+      "highlights": {
+        "es": ["Análisis y desarrollo de software, mantenimiento de aplicaciones."],
+        "en": ["Software analysis and development, application maintenance."]
+      },
+      "skills": ["PHP", "Laravel", "C#", "NodeJS", "ReactJS", "MySQL", "PostgreSQL", "Azure", "Docker", "Github Actions"]
+    },
+    {
+      "company": "Techgenies",
+      "position": "Fullstack Engineer",
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-09",
+      "endDate": "2024-09",
+      "highlights": {
+        "es": [
+          "Análisis y desarrollo de software, mantenimiento de aplicaciones.",
+          "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
+          "Escribir código bien diseñado y comprobable."
+        ],
+        "en": [
+          "Software analysis and development, application maintenance.",
+          "Execute the full Software Development Life Cycle (SDLC).",
+          "Write well designed and testable code."
+        ]
+      },
+      "skills": ["PHP", "Laravel", "C#", "Python", "Django", "NodeJS", "NestJS", "ReactJS", "MySQL", "MongoDB", "PostgreSQL", "AWS", "Azure", "Docker", "Github Actions", "React Native"]
+    },
+    {
+      "company": "Main Outsourcing SAS",
+      "position": "Fullstack Developer",
+      "location": "Bogotá, Colombia",
+      "startDate": "2023-01",
+      "endDate": "2023-08",
+      "highlights": {
+        "es": [
+          "Análisis y desarrollo de software, mantenimiento de aplicaciones.",
+          "Elaborar informes y documentación correspondientes a los desarrollos.",
+          "Asistir en las implementaciones de las aplicaciones.",
+          "Asistir a las reuniones que se requieran de los desarrollos para planear, definir, entregar, etc.",
+          "Capacitar al personal requerido sobre las aplicaciones.",
+          "Efectuar entregas formales de las construcciones de software."
+        ],
+        "en": [
+          "Software analysis and development, application maintenance.",
+          "Prepare reports and documentation corresponding to the developments.",
+          "Assist in the implementation of the applications.",
+          "Attend meetings required for the developments to plan, define, deliver, etc.",
+          "Train the required personnel on the applications.",
+          "Formally deliver the software constructions."
+        ]
+      },
+      "skills": ["PHP", "Symfony", "NodeJS", "ReactJS", "MySQL", "Docker", "Github Actions"]
+    },
+    {
+      "company": "Laika",
+      "position": { "es": "Backend Developer Senior", "en": "Senior Backend Developer" },
+      "location": "Bogotá, Colombia",
+      "startDate": "2022-08",
+      "endDate": "2022-12",
+      "highlights": {
+        "es": [
+          "Participación proactiva en encuentros orientados a la creación de nuevas prácticas.",
+          "Automatización en la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
+          "Crear e implementar software para la conexión de múltiples tiendas que quieran vender sus productos a través de la empresa."
+        ],
+        "en": [
+          "Proactive participation in meetings focused on creating new practices.",
+          "Automation in the creation and updating of products on marketplaces such as Mercado Libre and Shopify.",
+          "Create and implement software for the connection of multiple stores that want to sell their products through the company."
+        ]
+      },
+      "skills": ["PHP", "Laravel", "GraphQL", "MySQL", "Docker", "Github Actions"]
+    },
+    {
+      "company": "Sellrs",
+      "position": "Software Engineer",
+      "location": { "es": "Ciudad de México, México", "en": "Mexico City, Mexico" },
+      "startDate": "2022-01",
+      "endDate": "2022-07",
+      "highlights": {
+        "es": [
+          "Crear sistema de gestión de productos, de forma manual (Google Drive) y automática (Mercado Libre, Shopify).",
+          "Ejecute el ciclo de vida completo de desarrollo de software (SDLC).",
+          "Desarrolle diagramas de flujo, diseños y documentación para identificar requisitos y soluciones.",
+          "Escribir código bien diseñado y comprobable.",
+          "Producir especificaciones y determinar la viabilidad operativa.",
+          "Integre componentes de software en un sistema de software totalmente funcional.",
+          "Desarrollar planes de verificación de software y procedimientos de aseguramiento de la calidad.",
+          "Documente y mantenga la funcionalidad del software.",
+          "Resuelva problemas, depure y actualice los sistemas existentes.",
+          "Implemente programas y evalúe los comentarios de los usuarios.",
+          "Cumplir con los planes del proyecto y los estándares de la industria.",
+          "Asegúrese de que el software esté actualizado con las funciones más recientes."
+        ],
+        "en": [
+          "Create product management system, manually (Google Drive) and automatically (Mercado Libre, Shopify).",
+          "Execute the full Software Development Life Cycle (SDLC).",
+          "Develop flowcharts, layouts, and documentation to identify requirements and solutions.",
+          "Write well designed and testable code.",
+          "Produce specifications and determine operational feasibility.",
+          "Integrate software components into a fully functional software system.",
+          "Develop software verification plans and quality assurance procedures.",
+          "Document and maintain software functionality.",
+          "Troubleshoot, debug, and upgrade existing systems.",
+          "Deploy programs and evaluate user feedback.",
+          "Comply with project plans and industry standards.",
+          "Make sure the software is up to date with the latest features."
+        ]
+      },
+      "skills": ["PHP", "Symfony", "ReactJS", "MySQL", "Docker", "Github Actions"]
+    },
+    {
+      "company": "Loro",
+      "position": { "es": "Desarrollador Backend e Integraciones", "en": "Backend and Integrations Developer" },
+      "location": "Bogotá, Colombia",
+      "startDate": "2020-05",
+      "endDate": "2021-12",
+      "highlights": {
+        "es": [
+          "Realizar ajustes, mejoras, nuevos desarrollos en la parte trasera, integrando con app y web a través de apis, gestionando cron job, optimizando código.",
+          "Implemente ReactPHP para realizar cargas asincrónicas y actualizaciones de stock.",
+          "Realizar conexiones con Vtex, Woocommerce y bases de datos para carga y actualización de stock.",
+          "Implementar la categorización y subcategorización automática y masiva de productos."
+        ],
+        "en": [
+          "Make adjustments, improvements, and new developments on the backend, integrating with the app and web through APIs, managing cron jobs, optimizing code.",
+          "Implement ReactPHP for asynchronous uploads and stock updates.",
+          "Establish connections with Vtex, Woocommerce, and databases for stock loading and updating.",
+          "Implement automatic and massive product categorization and subcategorization."
+        ]
+      },
+      "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions"]
+    },
+    {
+      "company": "BRM",
+      "position": "Senior Developer",
+      "location": "Bogotá, Colombia",
+      "startDate": "2019-07",
+      "endDate": "2020-03",
+      "highlights": {
+        "es": [
+          "Levantar, gestionar y desarrollar los requerimientos necesarios para cada proyecto que me fue encomendado, liderando un equipo de desarrolladores junior y liderando dichos proyectos."
+        ],
+        "en": [
+          "Gather, manage and develop the requirements for each project entrusted to me, leading a team of junior developers and leading those projects."
+        ]
+      },
+      "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions", "IoT", "Wordpress", "ReactJS", "Angular", "React Native"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Politécnico Grancolombiano",
+      "area": { "es": "Ingeniería de Software", "en": "Software Engineering" },
+      "location": "Bogotá, Colombia",
+      "startDate": "2019",
+      "endDate": "2022"
+    },
+    {
+      "institution": "Unipanamericana",
+      "area": { "es": "Seguridad Informática", "en": "Information Security" },
+      "location": "Bogotá, Colombia",
+      "startDate": "2017-06",
+      "endDate": "2017-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": { "es": "Lenguajes", "en": "Languages" },
+      "keywords": ["PHP", "C#", "Python", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "name": "Backend",
+      "keywords": ["Laravel", "Symfony", "Django", "NodeJS", "NestJS"]
+    },
+    {
+      "name": "Frontend",
+      "keywords": ["ReactJS", "NextJS", "VueJS", "Angular", "Astro"]
+    },
+    {
+      "name": { "es": "Nube y DevOps", "en": "Cloud & DevOps" },
+      "keywords": ["AWS", "Azure", "Cloudflare", "Docker", "Git", "GitHub Actions"]
+    },
+    {
+      "name": { "es": "Arquitectura", "en": "Architecture" },
+      "keywords": ["DDD", "CQRS", "SOLID", "CLI"]
+    },
+    {
+      "name": { "es": "Habilidades blandas", "en": "Soft skills" },
+      "keywords": {
+        "es": ["Adaptabilidad", "Trabajo en equipo", "Comunicación interpersonal"],
+        "en": ["Adaptability", "Teamwork", "Interpersonal communication"]
+      }
+    }
+  ],
+  "languages": [
+    { "language": { "es": "Español", "en": "Spanish" }, "fluency": { "es": "Nativo", "en": "Native" } },
+    { "language": { "es": "Inglés", "en": "English" }, "fluency": { "es": "Básico", "en": "Basic" } }
+  ]
+}

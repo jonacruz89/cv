@@ -1,39 +1,44 @@
 ---
+import '@/styles/global.css'
+import { LOCALES, localePath, type ResolvedCv } from '@/lib/cv'
+
 interface Props {
-  title: string;
+  cv: ResolvedCv
+  template: 'modern' | 'harvard'
 }
 
-const { title } = Astro.props;
-const { currentLocale } = Astro
+const { cv, template } = Astro.props
+const { locale, labels, settings, basics } = cv
+const otherLocale = LOCALES.find((l) => l !== locale) ?? locale
+const page = template === 'harvard' ? 'harvard' : ''
+const title = `${basics.name} – ${basics.label}${template === 'harvard' ? ' (Harvard)' : ''}`
+const pageSize = settings.paper === 'A4' ? 'A4' : 'letter'
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang={locale} style={`--accent: ${settings.accentColor}`}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Jonathan Cruz - CV" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={basics.summary ?? title} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={localePath(l, page)} />)}
+    <link rel="alternate" type="text/markdown" href={localePath(locale, 'cv.md')} />
     <title>{title}</title>
+    <style set:html={`@page { size: ${pageSize}; }`}></style>
+    {import.meta.env.PROD && <script is:inline defer src="/_vercel/insights/script.js"></script>}
   </head>
-  <body>
+  <body class={`template-${template}`} data-paper={pageSize}>
+    <nav class="toolbar no-print" aria-label="CV">
+      <a href={localePath(locale)} aria-current={template === 'modern' ? 'page' : undefined}>{labels.modern}</a>
+      <a href={localePath(locale, 'harvard')} aria-current={template === 'harvard' ? 'page' : undefined}>{labels.harvard}</a>
+      <a href={localePath(locale, 'cv.md')}>{labels.markdown}</a>
+      <a href={localePath(otherLocale, page)} hreflang={otherLocale}>{labels.otherLanguage}</a>
+      <button type="button" id="print-btn">{labels.print}</button>
+    </nav>
     <slot />
+    <script>
+      document.getElementById('print-btn')?.addEventListener('click', () => window.print())
+    </script>
   </body>
 </html>
-<style is:global>
-  :root {
-    --color-primary: #5754fc;
-  }
-  html {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      "Courier New",
-      Courier,
-      monospace;
-    background: #777;
-    letter-spacing: -0.025rem;
-  }
-</style>

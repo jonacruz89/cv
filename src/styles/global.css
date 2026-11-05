@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: var(--accent);
+  --font-mono: Menlo, Monaco, "Lucida Console", "Courier New", Courier, monospace;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+html {
+  background: #777;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Sheet of paper on screen */
+.sheet {
+  background: white;
+  color: #111;
+  width: 100%;
+  max-width: 8.5in;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
+}
+[data-paper="A4"] .sheet { max-width: 210mm; }
+
+/* Navigation bar (screen only) */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  font: 13px/1.4 system-ui, sans-serif;
+  color: white;
+}
+.toolbar a, .toolbar button {
+  color: inherit;
+  opacity: 0.85;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font: inherit;
+  padding: 0;
+}
+.toolbar a:hover, .toolbar button:hover { opacity: 1; text-decoration: underline; }
+.toolbar [aria-current="page"] { opacity: 1; font-weight: 600; }
+.toolbar button {
+  border: 1px solid rgb(255 255 255 / 0.6);
+  border-radius: 999px;
+  padding: 0 0.75rem;
+}
+
+@media print {
+  html, body { background: white; }
+  .no-print { display: none !important; }
+  .sheet {
+    max-width: none;
+    margin: 0;
+    box-shadow: none;
+  }
+  a { color: inherit; text-decoration: none; }
+}
