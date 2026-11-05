@@ -31,6 +31,11 @@ export const cvSchema = z.object({
       paper: z.enum(['letter', 'A4']).default('letter').describe('Tamaño de página al imprimir'),
       accentColor: z.string().default('#5754fc'),
       monogram: z.string().optional().describe('Iniciales grandes del diseño moderno, ej. "JC"'),
+      seo: z
+        .object({
+          description: text.optional().describe('Texto corto (~155 caracteres) que se ve al compartir el enlace. Si falta, se usa el inicio de basics.summary')
+        })
+        .prefault({}),
       modern: z
         .object({
           sidebar: z.array(sectionId).default(['summary', 'skills', 'languages', 'contact']),

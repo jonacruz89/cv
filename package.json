@@ -7,7 +7,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "schema": "node scripts/gen-schema.ts",
-    "astro": "astro"
+    "astro": "astro",
+    "og": "astro build && node scripts/og.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.4",

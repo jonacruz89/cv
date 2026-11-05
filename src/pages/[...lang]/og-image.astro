@@ -1,0 +1,59 @@
+---
+// Source for the 1200×630 share image. `pnpm og` screenshots it into public/og*.png.
+import { getCv, localeStaticPaths, type Locale } from '@/lib/cv'
+
+export const getStaticPaths = localeStaticPaths
+
+const cv = getCv(Astro.props.locale as Locale)
+const { basics, settings } = cv
+const tags = cv.skills.slice(0, 3).flatMap((s) => s.keywords).slice(0, 9)
+const links = cv.contact.filter((c) => c.kind === 'profile' || c.kind === 'location').map((c) => c.label)
+---
+
+<!doctype html>
+<html lang={cv.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <title>OG – {basics.name}</title>
+    <style is:inline set:html={`:root { --accent: ${settings.accentColor}; }`}></style>
+    <style is:inline>
+      * { box-sizing: border-box; margin: 0; }
+      html, body { width: 1200px; height: 630px; overflow: hidden; }
+      body {
+        display: grid;
+        grid-template-columns: 70px 330px 1fr;
+        background: white;
+        color: #111;
+        font-family: Menlo, Monaco, "DejaVu Sans Mono", "Liberation Mono", "Courier New", monospace;
+        letter-spacing: -0.02em;
+      }
+      .strip { background: var(--accent); }
+      .mono {
+        display: flex; align-items: center; justify-content: center;
+        border-right: 4px solid #d9d9d9;
+        font-size: 150px; font-weight: 800; color: var(--accent);
+      }
+      .info { display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: 0 64px; }
+      .label { font-size: 30px; color: #6b7280; }
+      h1 { font-size: 76px; font-weight: 500; line-height: 1; }
+      .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+      .tags span {
+        font-size: 22px; padding: 6px 16px; border-radius: 999px;
+        background: color-mix(in srgb, var(--accent) 14%, white);
+        color: color-mix(in srgb, var(--accent) 75%, black);
+      }
+      .links { font-size: 22px; color: #6b7280; margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="strip"></div>
+    <div class="mono">{basics.monogram}</div>
+    <div class="info">
+      <p class="label">{basics.label}</p>
+      <h1>{basics.name}</h1>
+      <div class="tags">{tags.map((t) => <span>{t}</span>)}</div>
+      <p class="links">{links.join('  ·  ')}</p>
+    </div>
+  </body>
+</html>

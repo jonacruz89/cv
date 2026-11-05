@@ -5,6 +5,12 @@
     "paper": "letter",
     "accentColor": "#5754fc",
     "monogram": "JC",
+    "seo": {
+      "description": {
+        "es": "Ingeniero de software fullstack con más de 5 años de experiencia en PHP, Laravel, Node.js, React y la nube (AWS, Azure). Bogotá, Colombia.",
+        "en": "Fullstack software engineer with 5+ years of experience in PHP, Laravel, Node.js, React and the cloud (AWS, Azure). Based in Bogotá, Colombia."
+      }
+    },
     "modern": {
       "sidebar": ["summary", "skills", "languages", "contact"],
       "main": ["work", "education"],
@@ -40,7 +46,18 @@
         "es": ["Análisis y desarrollo de software, mantenimiento de aplicaciones."],
         "en": ["Software analysis and development, application maintenance."]
       },
-      "skills": ["PHP", "Laravel", "C#", "NodeJS", "ReactJS", "MySQL", "PostgreSQL", "Azure", "Docker", "Github Actions"]
+      "skills": [
+        "PHP",
+        "Laravel",
+        "C#",
+        "NodeJS",
+        "ReactJS",
+        "MySQL",
+        "PostgreSQL",
+        "Azure",
+        "Docker",
+        "Github Actions"
+      ]
     },
     {
       "company": "Techgenies",
@@ -60,7 +77,24 @@
           "Write well designed and testable code."
         ]
       },
-      "skills": ["PHP", "Laravel", "C#", "Python", "Django", "NodeJS", "NestJS", "ReactJS", "MySQL", "MongoDB", "PostgreSQL", "AWS", "Azure", "Docker", "Github Actions", "React Native"]
+      "skills": [
+        "PHP",
+        "Laravel",
+        "C#",
+        "Python",
+        "Django",
+        "NodeJS",
+        "NestJS",
+        "ReactJS",
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL",
+        "AWS",
+        "Azure",
+        "Docker",
+        "Github Actions",
+        "React Native"
+      ]
     },
     {
       "company": "Main Outsourcing SAS",
@@ -182,7 +216,18 @@
           "Gather, manage and develop the requirements for each project entrusted to me, leading a team of junior developers and leading those projects."
         ]
       },
-      "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions", "IoT", "Wordpress", "ReactJS", "Angular", "React Native"]
+      "skills": [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Docker",
+        "Github Actions",
+        "IoT",
+        "Wordpress",
+        "ReactJS",
+        "Angular",
+        "React Native"
+      ]
     }
   ],
   "education": [
@@ -231,7 +276,13 @@
     }
   ],
   "languages": [
-    { "language": { "es": "Español", "en": "Spanish" }, "fluency": { "es": "Nativo", "en": "Native" } },
-    { "language": { "es": "Inglés", "en": "English" }, "fluency": { "es": "Básico", "en": "Basic" } }
+    {
+      "language": { "es": "Español", "en": "Spanish" },
+      "fluency": { "es": "Nativo", "en": "Native" }
+    },
+    {
+      "language": { "es": "Inglés", "en": "English" },
+      "fluency": { "es": "Básico", "en": "Basic" }
+    }
   ]
 }

@@ -9,7 +9,7 @@ const { sidebar, main, showWorkSkills } = settings.modern
 const icons: Record<string, string> = { linkedin: '/linkedin.svg', github: '/github.svg' }
 const contactIcon = { email: '✉', phone: '☎', location: '⌂', website: '🔗', profile: '↗' }
 const contact = cv.contact.filter((c) => c.kind !== 'profile')
-const monogram = settings.monogram ?? basics.name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2)
+const monogram = basics.monogram
 ---
 
 {/* A section can be placed in the sidebar or the main column via settings.modern in cv.json */}

@@ -34,6 +34,35 @@
           "description": "Iniciales grandes del diseño moderno, ej. \"JC\"",
           "type": "string"
         },
+        "seo": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "Texto corto (~155 caracteres) que se ve al compartir el enlace. Si falta, se usa el inicio de basics.summary",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "es": {
+                      "type": "string"
+                    },
+                    "en": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "es",
+                    "en"
+                  ]
+                }
+              ]
+            }
+          }
+        },
         "modern": {
           "default": {},
           "type": "object",

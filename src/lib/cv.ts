@@ -42,7 +42,16 @@ export function formatRange (start: string | undefined, end: string | undefined,
   return from || to
 }
 
-export type Labels = (typeof ui)['es']
+/** Cut at a word boundary and add "…" when longer than `max`. */
+function truncate (text: string, max: number): string {
+  if (text.length <= max) return text
+  return text.slice(0, text.lastIndexOf(' ', max - 1)).replace(/[,.;:]$/, '') + '…'
+}
+
+/** og:locale values */
+export const OG_LOCALES: Record<Locale, string> = { es: 'es_CO', en: 'en_US' }
+
+export type Labels =(typeof ui)['es']
 export type SectionId = 'summary' | 'work' | 'education' | 'skills' | 'languages' | 'contact'
 
 export interface ContactItem { kind: 'email' | 'phone' | 'location' | 'website' | 'profile', label: string, href?: string }
@@ -67,15 +76,21 @@ export function getCv (locale: Locale) {
     }))
   ].filter((item) => !!item)
 
+  const summary = pickOptional(basics.summary, locale)
+
   return {
     locale,
     labels: ui[locale],
     settings,
+    seo: {
+      description: pickOptional(settings.seo.description, locale) ?? truncate(summary ?? pick(basics.label, locale), 155)
+    },
     basics: {
       name: basics.name,
+      monogram: settings.monogram ?? basics.name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase(),
       label: pick(basics.label, locale),
       email: basics.email,
-      summary: pickOptional(basics.summary, locale),
+      summary,
       location: pickOptional(basics.location, locale),
       profiles: basics.profiles
     },
