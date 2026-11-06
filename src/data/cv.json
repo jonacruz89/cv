@@ -7,8 +7,8 @@
     "monogram": "JC",
     "seo": {
       "description": {
-        "es": "Ingeniero de software fullstack con más de {years} años de experiencia en PHP, Laravel, Node.js, React y la nube (AWS, Azure). Bogotá, Colombia.",
-        "en": "Fullstack software engineer with {years}+ years of experience in PHP, Laravel, Node.js, React and the cloud (AWS, Azure). Based in Bogotá, Colombia."
+        "es": "Ingeniero de software fullstack con más de {years} años de experiencia en PHP, Laravel, NodeJS, React y la nube (AWS, Azure). Bogotá, Colombia.",
+        "en": "Fullstack software engineer with {years}+ years of experience in PHP, Laravel, NodeJS, React and the cloud (AWS, Azure). Based in Bogotá, Colombia."
       }
     },
     "modern": {
@@ -22,18 +22,29 @@
   },
   "basics": {
     "name": "Jonathan Cruz",
-    "label": { "es": "Ingeniero de Software Fullstack", "en": "Fullstack Software Engineer" },
+    "label": {
+      "es": "Ingeniero de Software Fullstack",
+      "en": "Fullstack Software Engineer"
+    },
     "email": "jonathan.cruz89@gmail.com",
     "phone": "+57 305 383 5010",
     "whatsapp": "573053835010",
     "location": "Bogotá, Colombia",
     "summary": {
-      "es": "Ingeniero de software fullstack con más de {years} años de experiencia en logística, fintech, comercio electrónico y plataformas multinivel (MLM). He modernizado plataformas legadas, operado redes de más de 1.000 sitios WordPress, construido integraciones con marketplaces y proveedores externos, y llevado proyectos de punta a punta: arquitectura, pruebas, CI/CD y despliegue en AWS, Azure o Vercel. Trabajo con PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, Node.js y React/Next.js, aplicando DDD, CQRS y arquitectura hexagonal.",
-      "en": "Fullstack software engineer with {years}+ years of experience in logistics, fintech, e-commerce and multi-level marketing (MLM) platforms. I have modernized legacy platforms, run networks of 1,000+ WordPress sites, built integrations with marketplaces and third-party providers, and owned projects end to end: architecture, testing, CI/CD and deployment on AWS, Azure or Vercel. I work with PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, Node.js and React/Next.js, applying DDD, CQRS and hexagonal architecture."
+      "es": "Ingeniero de software fullstack con más de {years} años de experiencia en logística, fintech, comercio electrónico y plataformas multinivel (MLM). He modernizado plataformas legadas, operado redes de más de 1.000 sitios WordPress, construido integraciones con marketplaces y proveedores externos, y llevado proyectos de punta a punta: arquitectura, pruebas, CI/CD y despliegue en AWS, Azure o Vercel. Trabajo con PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, NodeJS y React/NextJS, aplicando DDD, CQRS y arquitectura hexagonal.",
+      "en": "Fullstack software engineer with {years}+ years of experience in logistics, fintech, e-commerce and multi-level marketing (MLM) platforms. I have modernized legacy platforms, run networks of 1,000+ WordPress sites, built integrations with marketplaces and third-party providers, and owned projects end to end: architecture, testing, CI/CD and deployment on AWS, Azure or Vercel. I work with PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, NodeJS and React/NextJS, applying DDD, CQRS and hexagonal architecture."
     },
     "profiles": [
-      { "network": "LinkedIn", "username": "jonacruz89", "url": "https://www.linkedin.com/in/jonacruz89" },
-      { "network": "GitHub", "username": "jonacruz89", "url": "https://github.com/jonacruz89" }
+      {
+        "network": "LinkedIn",
+        "username": "jonacruz89",
+        "url": "https://www.linkedin.com/in/jonacruz89"
+      },
+      {
+        "network": "GitHub",
+        "username": "jonacruz89",
+        "url": "https://github.com/jonacruz89"
+      }
     ]
   },
   "work": [
@@ -51,21 +62,32 @@
           "Manage multilingual sites with WPML and build and adjust pages with Elementor."
         ]
       },
-      "skills": ["WordPress", "WordPress Multisite", "WPML", "Elementor", "PHP", "MySQL"]
+      "skills": [
+        "WordPress",
+        "WordPress Multisite",
+        "WPML",
+        "Elementor",
+        "PHP",
+        "MySQL",
+        "Bitbucket"
+      ]
     },
     {
       "company": "Freelance",
-      "position": { "es": "Desarrollador Fullstack Independiente", "en": "Freelance Fullstack Developer" },
+      "position": {
+        "es": "Desarrollador Fullstack Independiente",
+        "en": "Freelance Fullstack Developer"
+      },
       "location": { "es": "Remoto", "en": "Remote" },
       "highlights": {
         "es": [
-          "Desarrollé de punta a punta plataformas de marketing multinivel (MLM): compra de productos, cálculo de comisiones y ROI, y pagos con ePayco y criptomonedas.",
+          "Desarrollé de punta a punta plataformas de marketing multinivel (MLM): compra de productos, cálculo de comisiones y ROI, y pagos con ePayco, Stripe y criptomonedas (CoinPayments).",
           "Escribí un smart contract para registrar los depósitos de una de estas plataformas.",
           "Integré un chat en tiempo real tipo WhatsApp en una app móvil existente.",
           "Me encargué del ciclo completo: repositorio, arquitectura, pruebas, CI/CD e infraestructura en Vercel, cPanel y AWS (EC2, Lambda, S3), con Cloudflare R2 y correo transaccional con Mailgun."
         ],
         "en": [
-          "Built multi-level marketing (MLM) platforms end to end: product purchases, commission and ROI calculation, and payments through ePayco and cryptocurrencies.",
+          "Built multi-level marketing (MLM) platforms end to end: product purchases, commission and ROI calculation, and payments through ePayco, Stripe and cryptocurrencies (CoinPayments).",
           "Wrote a smart contract to track deposits for one of these platforms.",
           "Integrated a WhatsApp-style real-time chat into an existing mobile app.",
           "Owned the full cycle: repository, architecture, testing, CI/CD and infrastructure on Vercel, cPanel and AWS (EC2, Lambda, S3), with Cloudflare R2 and transactional email through Mailgun."
@@ -75,10 +97,10 @@
         "PHP",
         "Laravel",
         "TypeScript",
-        "Node.js",
+        "NodeJS",
         "NestJS",
         "React",
-        "Next.js",
+        "NextJS",
         "React Native",
         "MySQL",
         "PostgreSQL",
@@ -89,6 +111,8 @@
         "Docker",
         "GitHub Actions",
         "ePayco",
+        "Stripe",
+        "CoinPayments",
         "Mailgun",
         "Smart Contracts"
       ],
@@ -105,18 +129,29 @@
           "Estuve a cargo por completo de una plataforma legada en PHP para empresas de transporte de carga a granel entre ciudades (trigo, hidrocarburos): la modernicé con mejoras estructurales y de lógica de negocio.",
           "Desarrollé nuevas funcionalidades en .NET (C#) para la misma operación logística.",
           "Construí el puente de comunicación para migrar la plataforma PHP a una solución externa, y las integraciones con proveedores externos de rastreo y carga.",
-          "En Pagui, startup fintech de originación de crédito, desarrollé funcionalidades con React, Next.js y .NET, gestionando mis entregas y la comunicación con las demás áreas.",
+          "En Pagui, startup fintech de originación de crédito, desarrollé funcionalidades con React, NextJS y .NET, gestionando mis entregas y la comunicación con las demás áreas.",
           "Acompañé a un desarrollador aprendiz hasta que pudo trabajar de forma autónoma en el proyecto."
         ],
         "en": [
           "Fully owned a legacy PHP platform for bulk-cargo transport companies operating between cities (wheat, hydrocarbons), modernizing its structure and business logic.",
           "Built new features in .NET (C#) for the same logistics operation.",
           "Built the bridge that let the PHP platform migrate to an external solution, plus integrations with third-party tracking and cargo providers.",
-          "At Pagui, a credit-origination fintech startup, built features with React, Next.js and .NET, managing my own deliverables and the communication with other teams.",
+          "At Pagui, a credit-origination fintech startup, built features with React, NextJS and .NET, managing my own deliverables and the communication with other teams.",
           "Mentored an apprentice developer until they could work on the project independently."
         ]
       },
-      "skills": ["PHP", "C#", ".NET", "React", "Next.js", "MySQL", "PostgreSQL", "Azure", "Docker", "GitHub Actions"]
+      "skills": [
+        "PHP",
+        "C#",
+        ".NET",
+        "React",
+        "NextJS",
+        "MySQL",
+        "PostgreSQL",
+        "Azure",
+        "Docker",
+        "GitHub Actions"
+      ]
     },
     {
       "company": "Techgenies",
@@ -142,7 +177,7 @@
         "C#",
         "Python",
         "Django",
-        "Node.js",
+        "NodeJS",
         "NestJS",
         "React",
         "MySQL",
@@ -163,21 +198,32 @@
       "endDate": "2023-08",
       "highlights": {
         "es": [
-          "Desarrollé y mantuve aplicaciones con Symfony, Node.js y React.",
+          "Desarrollé y mantuve aplicaciones con Symfony, NodeJS y React.",
           "Acompañé la puesta en producción de cada desarrollo y realicé las entregas formales al cliente.",
           "Elaboré la documentación técnica y funcional, y capacité a los usuarios en las nuevas herramientas."
         ],
         "en": [
-          "Built and maintained applications with Symfony, Node.js and React.",
+          "Built and maintained applications with Symfony, NodeJS and React.",
           "Supported every release to production and handled formal deliveries to the client.",
           "Wrote technical and functional documentation and trained users on the new tools."
         ]
       },
-      "skills": ["PHP", "Symfony", "Node.js", "React", "MySQL", "Docker", "GitHub Actions"]
+      "skills": [
+        "PHP",
+        "Symfony",
+        "NodeJS",
+        "React",
+        "MySQL",
+        "Docker",
+        "GitHub Actions"
+      ]
     },
     {
       "company": "Laika",
-      "position": { "es": "Backend Developer Senior", "en": "Senior Backend Developer" },
+      "position": {
+        "es": "Backend Developer Senior",
+        "en": "Senior Backend Developer"
+      },
       "location": "Bogotá, Colombia",
       "startDate": "2022-08",
       "endDate": "2022-12",
@@ -193,12 +239,22 @@
           "Owned the project independently, defining its architecture and deployment, and coordinated with the teams involved in each integration."
         ]
       },
-      "skills": ["PHP", "Laravel", "GraphQL", "MySQL", "Docker", "GitHub Actions"]
+      "skills": [
+        "PHP",
+        "Laravel",
+        "GraphQL",
+        "MySQL",
+        "Docker",
+        "GitHub Actions"
+      ]
     },
     {
       "company": "Sellrs",
       "position": "Software Engineer",
-      "location": { "es": "Ciudad de México, México", "en": "Mexico City, Mexico" },
+      "location": {
+        "es": "Ciudad de México, México",
+        "en": "Mexico City, Mexico"
+      },
       "startDate": "2022-01",
       "endDate": "2022-07",
       "highlights": {
@@ -219,7 +275,10 @@
     },
     {
       "company": "Loro",
-      "position": { "es": "Desarrollador Backend e Integraciones", "en": "Backend and Integrations Developer" },
+      "position": {
+        "es": "Desarrollador Backend e Integraciones",
+        "en": "Backend and Integrations Developer"
+      },
       "location": "Bogotá, Colombia",
       "startDate": "2020-05",
       "endDate": "2021-12",
@@ -301,7 +360,10 @@
     },
     {
       "institution": "Unipanamericana",
-      "area": { "es": "Curso de Seguridad Informática", "en": "Information Security Course" },
+      "area": {
+        "es": "Curso de Seguridad Informática",
+        "en": "Information Security Course"
+      },
       "location": "Bogotá, Colombia",
       "startDate": "2017-06",
       "endDate": "2017-07"
@@ -310,15 +372,33 @@
   "skills": [
     {
       "name": { "es": "Lenguajes", "en": "Languages" },
-      "keywords": ["PHP", "C#", "JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"]
+      "keywords": [
+        "PHP",
+        "C#",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "name": "Backend",
-      "keywords": ["Laravel", "Symfony", ".NET", "Node.js", "NestJS", "Django", "ReactPHP", "GraphQL"]
+      "keywords": [
+        "Laravel",
+        "Symfony",
+        ".NET",
+        "NodeJS",
+        "NestJS",
+        "Django",
+        "ReactPHP",
+        "GraphQL"
+      ]
     },
     {
       "name": "Frontend",
-      "keywords": ["React", "Next.js", "React Native", "Vue", "Angular", "Astro"]
+      "keywords": ["React", "NextJS", "React Native", "Vue", "Angular", "Astro"]
     },
     {
       "name": "CMS",
@@ -339,11 +419,15 @@
         "Kubernetes (kubectl, Minikube)",
         "GitHub Actions (CI/CD)",
         "Git",
+        "Bitbucket",
         "Linux CLI"
       ]
     },
     {
-      "name": { "es": "Arquitectura y calidad", "en": "Architecture & code quality" },
+      "name": {
+        "es": "Arquitectura y calidad",
+        "en": "Architecture & code quality"
+      },
       "keywords": {
         "es": [
           "DDD",
@@ -369,14 +453,37 @@
     },
     {
       "name": { "es": "Integraciones", "en": "Integrations" },
-      "keywords": ["VTEX", "Shopify", "Mercado Libre", "WooCommerce", "Rappi", "ePayco", "Mailgun", "Smart Contracts"],
+      "keywords": [
+        "VTEX",
+        "Shopify",
+        "Mercado Libre",
+        "WooCommerce",
+        "Rappi",
+        "ePayco",
+        "Stripe",
+        "CoinPayments",
+        "Mailgun",
+        "Smart Contracts"
+      ],
       "harvard": false
     },
     {
       "name": { "es": "Habilidades blandas", "en": "Soft skills" },
       "keywords": {
-        "es": ["Autonomía", "Comunicación con otras áreas", "Mentoría", "Adaptabilidad", "Trabajo en equipo"],
-        "en": ["Ownership", "Cross-team communication", "Mentoring", "Adaptability", "Teamwork"]
+        "es": [
+          "Autonomía",
+          "Comunicación con otras áreas",
+          "Mentoría",
+          "Adaptabilidad",
+          "Trabajo en equipo"
+        ],
+        "en": [
+          "Ownership",
+          "Cross-team communication",
+          "Mentoring",
+          "Adaptability",
+          "Teamwork"
+        ]
       },
       "harvard": false
     }
@@ -388,7 +495,10 @@
     },
     {
       "language": { "es": "Inglés", "en": "English" },
-      "fluency": { "es": "Intermedio (B1), en formación", "en": "Intermediate (B1), currently studying" }
+      "fluency": {
+        "es": "Intermedio (B1), en formación",
+        "en": "Intermediate (B1), currently studying"
+      }
     }
   ]
 }
