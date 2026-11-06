@@ -130,7 +130,7 @@ export function getCv (locale: Locale) {
         dates: formatRange(e.startDate, e.endDate, locale, false),
         highlights: pick(e.highlights, locale)
       })),
-    skills: data.skills.map((s) => ({ name: pick(s.name, locale), keywords: pick(s.keywords, locale) })),
+    skills: data.skills.map((s) => ({ name: pick(s.name, locale), keywords: pick(s.keywords, locale), harvard: s.harvard })),
     languages: data.languages.map((l) => ({ language: pick(l.language, locale), fluency: pick(l.fluency, locale) }))
   }
 }

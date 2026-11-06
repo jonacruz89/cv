@@ -565,6 +565,11 @@
                 ]
               }
             ]
+          },
+          "harvard": {
+            "default": true,
+            "description": "false = no mostrar este grupo en el formato Harvard",
+            "type": "boolean"
           }
         },
         "required": [

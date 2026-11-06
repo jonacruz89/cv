@@ -107,7 +107,8 @@ export const cvSchema = z.object({
     .array(
       z.object({
         name: text,
-        keywords: textList
+        keywords: textList,
+        harvard: z.boolean().default(true).describe('false = no mostrar este grupo en el formato Harvard')
       })
     )
     .default([]),

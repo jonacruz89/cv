@@ -28,8 +28,8 @@
     "whatsapp": "573053835010",
     "location": "Bogotá, Colombia",
     "summary": {
-      "es": "Ingeniero de software fullstack con más de {years} años de experiencia en logística, fintech, comercio electrónico y plataformas multinivel (MLM). He modernizado plataformas legadas, construido integraciones con marketplaces y proveedores externos, y llevado proyectos de punta a punta: arquitectura, pruebas, CI/CD y despliegue en AWS, Azure o Vercel. Trabajo con PHP (Laravel, Symfony), C# (.NET), Node.js y React/Next.js, aplicando DDD, CQRS y arquitectura hexagonal.",
-      "en": "Fullstack software engineer with {years}+ years of experience in logistics, fintech, e-commerce and multi-level marketing (MLM) platforms. I have modernized legacy platforms, built integrations with marketplaces and third-party providers, and owned projects end to end: architecture, testing, CI/CD and deployment on AWS, Azure or Vercel. I work with PHP (Laravel, Symfony), C# (.NET), Node.js and React/Next.js, applying DDD, CQRS and hexagonal architecture."
+      "es": "Ingeniero de software fullstack con más de {years} años de experiencia en logística, fintech, comercio electrónico y plataformas multinivel (MLM). He modernizado plataformas legadas, operado redes de más de 1.000 sitios WordPress, construido integraciones con marketplaces y proveedores externos, y llevado proyectos de punta a punta: arquitectura, pruebas, CI/CD y despliegue en AWS, Azure o Vercel. Trabajo con PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, Node.js y React/Next.js, aplicando DDD, CQRS y arquitectura hexagonal.",
+      "en": "Fullstack software engineer with {years}+ years of experience in logistics, fintech, e-commerce and multi-level marketing (MLM) platforms. I have modernized legacy platforms, run networks of 1,000+ WordPress sites, built integrations with marketplaces and third-party providers, and owned projects end to end: architecture, testing, CI/CD and deployment on AWS, Azure or Vercel. I work with PHP (Laravel, Symfony, WordPress), C# (.NET), TypeScript, Node.js and React/Next.js, applying DDD, CQRS and hexagonal architecture."
     },
     "profiles": [
       { "network": "LinkedIn", "username": "jonacruz89", "url": "https://www.linkedin.com/in/jonacruz89" },
@@ -37,6 +37,22 @@
     ]
   },
   "work": [
+    {
+      "company": "Mirai",
+      "position": "Senior WordPress Developer",
+      "startDate": "2025-01",
+      "highlights": {
+        "es": [
+          "Desarrollo funcionalidades a medida y doy mantenimiento a una red de más de 1.000 sitios sobre WordPress Multisite.",
+          "Gestiono sitios multilingües con WPML y construyo y ajusto páginas con Elementor."
+        ],
+        "en": [
+          "Build custom features for and maintain a network of 1,000+ sites on WordPress Multisite.",
+          "Manage multilingual sites with WPML and build and adjust pages with Elementor."
+        ]
+      },
+      "skills": ["WordPress", "WordPress Multisite", "WPML", "Elementor", "PHP", "MySQL"]
+    },
     {
       "company": "Freelance",
       "position": { "es": "Desarrollador Fullstack Independiente", "en": "Freelance Fullstack Developer" },
@@ -56,20 +72,31 @@
         ]
       },
       "skills": [
-        "Smart Contracts",
-        "ePayco",
-        "AWS EC2",
-        "AWS Lambda",
-        "AWS S3",
+        "PHP",
+        "Laravel",
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "React",
+        "Next.js",
+        "React Native",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "AWS",
         "Cloudflare R2",
         "Vercel",
+        "Docker",
+        "GitHub Actions",
+        "ePayco",
         "Mailgun",
-        "GitHub Actions"
-      ]
+        "Smart Contracts"
+      ],
+      "startDate": "2018"
     },
     {
       "company": "Grupo Sveacol - Pagui",
-      "position": "Fullstack Engineer",
+      "position": "Senior Fullstack Engineer",
       "location": "Bogotá, Colombia",
       "startDate": "2024-11",
       "endDate": "2026-07",
@@ -101,14 +128,12 @@
         "es": [
           "Desarrollé aplicaciones web y móviles (React, React Native) con backends en Laravel, Django, NestJS y C#.",
           "Participé en todo el ciclo de vida del software: análisis, diseño, desarrollo, pruebas y despliegue.",
-          "Trabajé con bases de datos relacionales y NoSQL (MySQL, PostgreSQL, MongoDB) e infraestructura en AWS y Azure.",
-          "Mantuve y mejoré aplicaciones en producción, priorizando código limpio y testeable."
+          "Trabajé con bases de datos relacionales y NoSQL (MySQL, PostgreSQL, MongoDB) e infraestructura en AWS y Azure."
         ],
         "en": [
           "Built web and mobile applications (React, React Native) backed by Laravel, Django, NestJS and C#.",
           "Worked across the full software development life cycle: analysis, design, development, testing and deployment.",
-          "Worked with relational and NoSQL databases (MySQL, PostgreSQL, MongoDB) and infrastructure on AWS and Azure.",
-          "Maintained and improved production applications with a focus on clean, testable code."
+          "Worked with relational and NoSQL databases (MySQL, PostgreSQL, MongoDB) and infrastructure on AWS and Azure."
         ]
       },
       "skills": [
@@ -140,14 +165,12 @@
         "es": [
           "Desarrollé y mantuve aplicaciones con Symfony, Node.js y React.",
           "Acompañé la puesta en producción de cada desarrollo y realicé las entregas formales al cliente.",
-          "Elaboré la documentación técnica y funcional, y capacité a los usuarios en las nuevas herramientas.",
-          "Participé en la planeación y definición del alcance con el equipo y los usuarios."
+          "Elaboré la documentación técnica y funcional, y capacité a los usuarios en las nuevas herramientas."
         ],
         "en": [
           "Built and maintained applications with Symfony, Node.js and React.",
           "Supported every release to production and handled formal deliveries to the client.",
-          "Wrote technical and functional documentation and trained users on the new tools.",
-          "Took part in planning and scoping with the team and stakeholders."
+          "Wrote technical and functional documentation and trained users on the new tools."
         ]
       },
       "skills": ["PHP", "Symfony", "Node.js", "React", "MySQL", "Docker", "GitHub Actions"]
@@ -287,7 +310,7 @@
   "skills": [
     {
       "name": { "es": "Lenguajes", "en": "Languages" },
-      "keywords": ["PHP", "C#", "JavaScript", "Python", "SQL", "HTML", "CSS"]
+      "keywords": ["PHP", "C#", "JavaScript", "TypeScript", "Python", "SQL", "HTML", "CSS"]
     },
     {
       "name": "Backend",
@@ -296,6 +319,10 @@
     {
       "name": "Frontend",
       "keywords": ["React", "Next.js", "React Native", "Vue", "Angular", "Astro"]
+    },
+    {
+      "name": "CMS",
+      "keywords": ["WordPress", "WordPress Multisite", "WPML", "Elementor"]
     },
     {
       "name": { "es": "Bases de datos", "en": "Databases" },
@@ -309,28 +336,49 @@
         "Cloudflare R2",
         "Vercel",
         "Docker",
+        "Kubernetes (kubectl, Minikube)",
         "GitHub Actions (CI/CD)",
         "Git",
         "Linux CLI"
       ]
     },
     {
-      "name": { "es": "Arquitectura", "en": "Architecture" },
+      "name": { "es": "Arquitectura y calidad", "en": "Architecture & code quality" },
       "keywords": {
-        "es": ["DDD", "CQRS", "Arquitectura hexagonal", "Clean Code", "SOLID", "Patrones de diseño"],
-        "en": ["DDD", "CQRS", "Hexagonal architecture", "Clean Code", "SOLID", "Design patterns"]
+        "es": [
+          "DDD",
+          "CQRS",
+          "Arquitectura hexagonal",
+          "Clean Code",
+          "SOLID",
+          "Patrones de diseño",
+          "ESLint",
+          "Testing"
+        ],
+        "en": [
+          "DDD",
+          "CQRS",
+          "Hexagonal architecture",
+          "Clean Code",
+          "SOLID",
+          "Design patterns",
+          "ESLint",
+          "Automated testing"
+        ]
       }
     },
     {
       "name": { "es": "Integraciones", "en": "Integrations" },
-      "keywords": ["VTEX", "Shopify", "Mercado Libre", "WooCommerce", "Rappi", "ePayco", "Mailgun", "Smart Contracts"]
+      "keywords": ["VTEX", "Shopify", "Mercado Libre", "WooCommerce", "Rappi", "ePayco", "Mailgun", "Smart Contracts"],
+      "harvard": false
     },
     {
       "name": { "es": "Habilidades blandas", "en": "Soft skills" },
       "keywords": {
         "es": ["Autonomía", "Comunicación con otras áreas", "Mentoría", "Adaptabilidad", "Trabajo en equipo"],
         "en": ["Ownership", "Cross-team communication", "Mentoring", "Adaptability", "Teamwork"]
-      }
+      },
+      "harvard": false
     }
   ],
   "languages": [

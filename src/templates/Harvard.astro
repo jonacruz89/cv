@@ -5,6 +5,9 @@ interface Props { cv: ResolvedCv }
 const { cv } = Astro.props
 const { labels, settings, basics } = cv
 const { sections, maxHighlights } = settings.harvard
+// Harvard convention: languages go as one more line of the skills section
+const languagesInSkills = sections.includes('skills') && sections.includes('languages') && cv.languages.length > 0
+const languagesLine = cv.languages.map((l) => `${l.language} (${l.fluency})`).join('; ')
 const limit = <T,>(list: T[]) => (maxHighlights ? list.slice(0, maxHighlights) : list)
 ---
 
@@ -62,14 +65,17 @@ const limit = <T,>(list: T[]) => (maxHighlights ? list.slice(0, maxHighlights) :
           return cv.skills.length > 0 && (
             <section>
               <h2>{labels.skills}</h2>
-              {cv.skills.map((s) => <p class="line"><strong>{s.name}:</strong> {s.keywords.join(', ')}</p>)}
+              {cv.skills.filter((s) => s.harvard).map((s) => <p class="line"><strong>{s.name}:</strong> {s.keywords.join(', ')}</p>)}
+              {languagesInSkills && (
+                <p class="line"><strong>{labels.languages}:</strong> {languagesLine}</p>
+              )}
             </section>
           )
         case 'languages':
-          return cv.languages.length > 0 && (
+          return !languagesInSkills && cv.languages.length > 0 && (
             <section>
               <h2>{labels.languages}</h2>
-              <p class="line">{cv.languages.map((l) => `${l.language} (${l.fluency})`).join('; ')}</p>
+              <p class="line">{languagesLine}</p>
             </section>
           )
         default:
@@ -83,14 +89,14 @@ const limit = <T,>(list: T[]) => (maxHighlights ? list.slice(0, maxHighlights) :
   .harvard {
     font-family: var(--font-serif);
     font-size: 10pt;
-    line-height: 1.35;
+    line-height: 1.3;
     padding: 0.5in 0.7in;
   }
   header { text-align: center; margin-bottom: 0.6rem; }
   h1 { font-size: 20pt; font-weight: 700; letter-spacing: 0.02em; }
   .contact { font-size: 9.5pt; margin-top: 0.2rem; }
   .contact a { color: inherit; text-decoration: none; }
-  section { margin-top: 0.7rem; }
+  section { margin-top: 0.55rem; }
   h2 {
     font-size: 10pt;
     font-weight: 700;
@@ -100,7 +106,7 @@ const limit = <T,>(list: T[]) => (maxHighlights ? list.slice(0, maxHighlights) :
     padding-bottom: 1px;
     margin-bottom: 0.35rem;
   }
-  .entry { margin-bottom: 0.5rem; }
+  .entry { margin-bottom: 0.4rem; }
   .row { display: flex; justify-content: space-between; gap: 1rem; }
   .row span { white-space: nowrap; }
   ul { list-style: disc; padding-left: 1.25rem; margin-top: 0.15rem; }

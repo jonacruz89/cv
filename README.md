@@ -21,6 +21,9 @@ la barra de navegación no sale impresa.
   (`{ "es": "Inglés", "en": "English" }`).
 - **Fechas**: `YYYY`, `YYYY-MM` o `YYYY-MM-DD`. Si un trabajo no tiene `endDate`, se muestra "Actualidad".
 - **Ocultar** un trabajo o estudio sin borrarlo: `"hidden": true`.
+- **Ocultar un grupo de skills solo en Harvard** (por ejemplo, habilidades blandas): `"harvard": false`.
+  En Harvard, los idiomas salen como una línea más dentro de Habilidades.
+- **Años de experiencia**: escribe `{years}` en el resumen y se calcula desde el trabajo más antiguo.
 - **Textos de la interfaz** (títulos de secciones, botones): `src/data/ui.json`.
 
 ### `settings`
