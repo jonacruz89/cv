@@ -22,32 +22,51 @@
   },
   "basics": {
     "name": "Jonathan Cruz",
-    "label": {
-      "es": "Ingeniero de Software Fullstack",
-      "en": "Fullstack Software Engineer"
-    },
+    "label": { "es": "Ingeniero de Software Fullstack", "en": "Fullstack Software Engineer" },
     "email": "jonathan.cruz89@gmail.com",
     "phone": "+57 305 383 5010",
     "whatsapp": "573053835010",
     "location": "Bogotá, Colombia",
     "summary": {
-      "es": "Ingeniero de software fullstack con más de {years} años de experiencia construyendo comercio electrónico, integraciones con marketplaces, pasarelas de pago, plataformas multinivel (MLM), criptomonedas y chat. Trabajo principalmente con PHP (Laravel, Symfony), Node.js, C# y React sobre AWS y Azure. Me enfoco en automatizar procesos y en entregar software mantenible que crezca con el negocio.",
-      "en": "Fullstack software engineer with {years}+ years of experience building e-commerce, marketplace integrations, payment gateways, multi-level marketing platforms (MLM), cryptocurrency and chat applications. I work mainly with PHP (Laravel, Symfony), Node.js, C# and React on AWS and Azure, with a focus on automating processes and delivering maintainable software that grows with the business."
+      "es": "Ingeniero de software fullstack con más de {years} años de experiencia en logística, fintech, comercio electrónico y plataformas multinivel (MLM). He modernizado plataformas legadas, construido integraciones con marketplaces y proveedores externos, y llevado proyectos de punta a punta: arquitectura, pruebas, CI/CD y despliegue en AWS, Azure o Vercel. Trabajo con PHP (Laravel, Symfony), C# (.NET), Node.js y React/Next.js, aplicando DDD, CQRS y arquitectura hexagonal.",
+      "en": "Fullstack software engineer with {years}+ years of experience in logistics, fintech, e-commerce and multi-level marketing (MLM) platforms. I have modernized legacy platforms, built integrations with marketplaces and third-party providers, and owned projects end to end: architecture, testing, CI/CD and deployment on AWS, Azure or Vercel. I work with PHP (Laravel, Symfony), C# (.NET), Node.js and React/Next.js, applying DDD, CQRS and hexagonal architecture."
     },
     "profiles": [
-      {
-        "network": "LinkedIn",
-        "username": "jonacruz89",
-        "url": "https://www.linkedin.com/in/jonacruz89"
-      },
-      {
-        "network": "GitHub",
-        "username": "jonacruz89",
-        "url": "https://github.com/jonacruz89"
-      }
+      { "network": "LinkedIn", "username": "jonacruz89", "url": "https://www.linkedin.com/in/jonacruz89" },
+      { "network": "GitHub", "username": "jonacruz89", "url": "https://github.com/jonacruz89" }
     ]
   },
   "work": [
+    {
+      "company": "Freelance",
+      "position": { "es": "Desarrollador Fullstack Independiente", "en": "Freelance Fullstack Developer" },
+      "location": { "es": "Remoto", "en": "Remote" },
+      "highlights": {
+        "es": [
+          "Desarrollé de punta a punta plataformas de marketing multinivel (MLM): compra de productos, cálculo de comisiones y ROI, y pagos con ePayco y criptomonedas.",
+          "Escribí un smart contract para registrar los depósitos de una de estas plataformas.",
+          "Integré un chat en tiempo real tipo WhatsApp en una app móvil existente.",
+          "Me encargué del ciclo completo: repositorio, arquitectura, pruebas, CI/CD e infraestructura en Vercel, cPanel y AWS (EC2, Lambda, S3), con Cloudflare R2 y correo transaccional con Mailgun."
+        ],
+        "en": [
+          "Built multi-level marketing (MLM) platforms end to end: product purchases, commission and ROI calculation, and payments through ePayco and cryptocurrencies.",
+          "Wrote a smart contract to track deposits for one of these platforms.",
+          "Integrated a WhatsApp-style real-time chat into an existing mobile app.",
+          "Owned the full cycle: repository, architecture, testing, CI/CD and infrastructure on Vercel, cPanel and AWS (EC2, Lambda, S3), with Cloudflare R2 and transactional email through Mailgun."
+        ]
+      },
+      "skills": [
+        "Smart Contracts",
+        "ePayco",
+        "AWS EC2",
+        "AWS Lambda",
+        "AWS S3",
+        "Cloudflare R2",
+        "Vercel",
+        "Mailgun",
+        "GitHub Actions"
+      ]
+    },
     {
       "company": "Grupo Sveacol - Pagui",
       "position": "Fullstack Engineer",
@@ -56,22 +75,21 @@
       "endDate": "2026-07",
       "highlights": {
         "es": [
-          "Análisis y desarrollo de software, mantenimiento de aplicaciones."
+          "Estuve a cargo por completo de una plataforma legada en PHP para empresas de transporte de carga a granel entre ciudades (trigo, hidrocarburos): la modernicé con mejoras estructurales y de lógica de negocio.",
+          "Desarrollé nuevas funcionalidades en .NET (C#) para la misma operación logística.",
+          "Construí el puente de comunicación para migrar la plataforma PHP a una solución externa, y las integraciones con proveedores externos de rastreo y carga.",
+          "En Pagui, startup fintech de originación de crédito, desarrollé funcionalidades con React, Next.js y .NET, gestionando mis entregas y la comunicación con las demás áreas.",
+          "Acompañé a un desarrollador aprendiz hasta que pudo trabajar de forma autónoma en el proyecto."
         ],
-        "en": ["Software analysis and development, application maintenance."]
+        "en": [
+          "Fully owned a legacy PHP platform for bulk-cargo transport companies operating between cities (wheat, hydrocarbons), modernizing its structure and business logic.",
+          "Built new features in .NET (C#) for the same logistics operation.",
+          "Built the bridge that let the PHP platform migrate to an external solution, plus integrations with third-party tracking and cargo providers.",
+          "At Pagui, a credit-origination fintech startup, built features with React, Next.js and .NET, managing my own deliverables and the communication with other teams.",
+          "Mentored an apprentice developer until they could work on the project independently."
+        ]
       },
-      "skills": [
-        "PHP",
-        "Laravel",
-        "C#",
-        "NodeJS",
-        "ReactJS",
-        "MySQL",
-        "PostgreSQL",
-        "Azure",
-        "Docker",
-        "Github Actions"
-      ]
+      "skills": ["PHP", "C#", ".NET", "React", "Next.js", "MySQL", "PostgreSQL", "Azure", "Docker", "GitHub Actions"]
     },
     {
       "company": "Techgenies",
@@ -99,16 +117,16 @@
         "C#",
         "Python",
         "Django",
-        "NodeJS",
+        "Node.js",
         "NestJS",
-        "ReactJS",
+        "React",
         "MySQL",
         "MongoDB",
         "PostgreSQL",
         "AWS",
         "Azure",
         "Docker",
-        "Github Actions",
+        "GitHub Actions",
         "React Native"
       ]
     },
@@ -132,102 +150,71 @@
           "Took part in planning and scoping with the team and stakeholders."
         ]
       },
-      "skills": [
-        "PHP",
-        "Symfony",
-        "NodeJS",
-        "ReactJS",
-        "MySQL",
-        "Docker",
-        "Github Actions"
-      ]
+      "skills": ["PHP", "Symfony", "Node.js", "React", "MySQL", "Docker", "GitHub Actions"]
     },
     {
       "company": "Laika",
-      "position": {
-        "es": "Backend Developer Senior",
-        "en": "Senior Backend Developer"
-      },
+      "position": { "es": "Backend Developer Senior", "en": "Senior Backend Developer" },
       "location": "Bogotá, Colombia",
       "startDate": "2022-08",
       "endDate": "2022-12",
       "highlights": {
         "es": [
-          "Automaticé la creación y actualización de productos en marketplaces como Mercado Libre y Shopify.",
-          "Desarrollé integraciones con Laravel y GraphQL para conectar múltiples tiendas que venden sus productos a través de la plataforma.",
-          "Propuse y ayudé a adoptar nuevas prácticas de desarrollo en el equipo."
+          "Diseñé y construí de punta a punta el conector entre Laika y sus tiendas aliadas para automatizar la importación y actualización de productos, incluidos marketplaces como Mercado Libre y Shopify.",
+          "Convertí en un solo clic un proceso que tomaba alrededor de un día de trabajo manual.",
+          "Lideré el proyecto de forma autónoma, definiendo la arquitectura y el despliegue, y coordiné con las áreas involucradas en cada integración."
         ],
         "en": [
-          "Automated product creation and updates on marketplaces such as Mercado Libre and Shopify.",
-          "Built Laravel and GraphQL integrations that connect multiple stores selling their products through the platform.",
-          "Proposed and helped adopt new development practices within the team."
+          "Designed and built end to end the connector between Laika and its partner stores to automate product imports and updates, including marketplaces such as Mercado Libre and Shopify.",
+          "Turned a process that took about a full day of manual work into a single click.",
+          "Owned the project independently, defining its architecture and deployment, and coordinated with the teams involved in each integration."
         ]
       },
-      "skills": [
-        "PHP",
-        "Laravel",
-        "GraphQL",
-        "MySQL",
-        "Docker",
-        "Github Actions"
-      ]
+      "skills": ["PHP", "Laravel", "GraphQL", "MySQL", "Docker", "GitHub Actions"]
     },
     {
       "company": "Sellrs",
       "position": "Software Engineer",
-      "location": {
-        "es": "Ciudad de México, México",
-        "en": "Mexico City, Mexico"
-      },
+      "location": { "es": "Ciudad de México, México", "en": "Mexico City, Mexico" },
       "startDate": "2022-01",
       "endDate": "2022-07",
       "highlights": {
         "es": [
-          "Construí el sistema de gestión de productos, con carga manual desde Google Drive y sincronización automática con Mercado Libre y Shopify.",
-          "Levanté requisitos y produje diagramas de flujo, especificaciones y análisis de viabilidad para cada solución.",
-          "Integré los componentes en un sistema completo y definí planes de verificación y aseguramiento de calidad.",
-          "Diagnostiqué, depuré y actualicé sistemas existentes a partir de la retroalimentación de los usuarios."
+          "Desarrollé la plataforma que unifica Mercado Libre, Rappi y Shopify en una sola interfaz, desde donde cada cliente gestiona sus productos e inventario.",
+          "Construí la carga de productos manual (Google Drive) y la sincronización automática con los marketplaces.",
+          "Trabajé directamente con el CTO en levantamiento de requisitos, especificaciones y planes de aseguramiento de calidad.",
+          "Diagnostiqué, depuré y mejoré los sistemas existentes a partir de la retroalimentación de los usuarios."
         ],
         "en": [
-          "Built the product management system, with manual uploads from Google Drive and automatic sync with Mercado Libre and Shopify.",
-          "Gathered requirements and produced flowcharts, specifications and feasibility analyses for each solution.",
-          "Integrated components into a complete system and defined verification and quality assurance plans.",
-          "Diagnosed, debugged and upgraded existing systems based on user feedback."
+          "Built the platform that unifies Mercado Libre, Rappi and Shopify in a single interface where each client manages their products and inventory.",
+          "Built manual product uploads (Google Drive) and automatic sync with the marketplaces.",
+          "Worked directly with the CTO on requirements, specifications and quality assurance plans.",
+          "Diagnosed, debugged and improved existing systems based on user feedback."
         ]
       },
-      "skills": [
-        "PHP",
-        "Symfony",
-        "ReactJS",
-        "MySQL",
-        "Docker",
-        "Github Actions"
-      ]
+      "skills": ["PHP", "Symfony", "React", "MySQL", "Docker", "GitHub Actions"]
     },
     {
       "company": "Loro",
-      "position": {
-        "es": "Desarrollador Backend e Integraciones",
-        "en": "Backend and Integrations Developer"
-      },
+      "position": { "es": "Desarrollador Backend e Integraciones", "en": "Backend and Integrations Developer" },
       "location": "Bogotá, Colombia",
       "startDate": "2020-05",
       "endDate": "2021-12",
       "highlights": {
         "es": [
-          "Desarrollé nuevas funcionalidades y optimicé el backend que alimenta la app móvil y la web a través de APIs, incluidas las tareas programadas (cron jobs).",
-          "Implementé procesamiento asíncrono con ReactPHP para cargas masivas y actualizaciones de inventario.",
-          "Integré VTEX, WooCommerce y bases de datos externas para sincronizar el inventario.",
-          "Automaticé la categorización y subcategorización masiva de productos."
+          "Formé parte del equipo de integraciones que conectaba el catálogo de cerca de 50 tiendas aliadas con la app móvil y la web.",
+          "Contribuí a reducir la conexión de un nuevo cliente de varios días a medio día de configuración.",
+          "Construí conectores según la capacidad de cada cliente: desde VTEX y WooCommerce para catálogos grandes hasta archivos CSV cargados por FTP, procesados y optimizados automáticamente.",
+          "Implementé procesamiento asíncrono con ReactPHP para cargas masivas y actualizaciones de inventario, y automaticé la categorización masiva de productos."
         ],
         "en": [
-          "Built new features and optimized the backend that powers the mobile app and website through APIs, including scheduled jobs (cron).",
-          "Implemented asynchronous processing with ReactPHP for bulk uploads and inventory updates.",
-          "Integrated VTEX, WooCommerce and external databases to keep inventory in sync.",
-          "Automated bulk product categorization and subcategorization."
+          "Part of the integrations team connecting the catalogs of about 50 partner stores to the mobile app and website.",
+          "Helped cut new-client onboarding from several days to half a day of configuration.",
+          "Built connectors matched to each client's capabilities: from VTEX and WooCommerce for large catalogs to CSV files uploaded via FTP, processed and optimized automatically.",
+          "Implemented asynchronous processing with ReactPHP for bulk uploads and inventory updates, and automated bulk product categorization."
         ]
       },
-      "skills": ["PHP", "Laravel", "MySQL", "Docker", "Github Actions"]
+      "skills": ["PHP", "Laravel", "MySQL", "Docker", "GitHub Actions"]
     },
     {
       "company": "BRM",
@@ -237,31 +224,51 @@
       "endDate": "2020-03",
       "highlights": {
         "es": [
-          "Lideré un equipo de desarrolladores junior en proyectos web, móviles e IoT.",
+          "Lideré un equipo de 2 desarrolladores, que creció a 3 durante el proyecto.",
+          "Construimos un sistema IoT de control de personal para un call center: un dispositivo USB en cada puesto registraba entrada, salida, tiempo de actividad y en llamadas, y mostraba el estado de la estación con un indicador tipo semáforo.",
           "Levanté y gestioné los requerimientos de cada proyecto, desde el análisis hasta la entrega.",
-          "Desarrollé soluciones con Laravel, WordPress, React, Angular y React Native."
+          "Mantuve y mejoré plataformas existentes en WordPress, PHP, Laravel, Symfony, React y React Native."
         ],
         "en": [
-          "Led a team of junior developers on web, mobile and IoT projects.",
+          "Led a team of 2 developers, which grew to 3 during the project.",
+          "Built an IoT workforce-tracking system for a call center: a USB device at each workstation recorded check-in, check-out, activity and call time, and showed the station status with a traffic-light indicator.",
           "Gathered and managed requirements for each project, from analysis to delivery.",
-          "Built solutions with Laravel, WordPress, React, Angular and React Native."
+          "Maintained and improved existing platforms built with WordPress, PHP, Laravel, Symfony, React and React Native."
         ]
       },
       "skills": [
         "PHP",
         "Laravel",
+        "Symfony",
         "MySQL",
         "Docker",
-        "Github Actions",
+        "GitHub Actions",
         "IoT",
-        "Wordpress",
-        "ReactJS",
+        "WordPress",
+        "React",
         "Angular",
         "React Native"
       ]
     }
   ],
   "education": [
+    {
+      "institution": "UdeCataluña",
+      "area": {
+        "es": "Diplomado en Ciberseguridad y Gestión de Riesgos Digitales (en curso)",
+        "en": "Diploma in Cybersecurity and Digital Risk Management (in progress)"
+      },
+      "location": { "es": "Virtual", "en": "Online" },
+      "endDate": "2027-01",
+      "highlights": {
+        "es": [
+          "Basado en la norma ISO 27001:2022; incluye certificación como Auditor Interno en Sistemas de Gestión de Seguridad de la Información (Applus+) y formación en gestión de la ciberseguridad según ISO 27032."
+        ],
+        "en": [
+          "Based on ISO 27001:2022; includes Internal Auditor certification in Information Security Management Systems (Applus+) and cybersecurity management training under ISO 27032."
+        ]
+      }
+    },
     {
       "institution": "Politécnico Grancolombiano",
       "area": { "es": "Ingeniería de Software", "en": "Software Engineering" },
@@ -271,7 +278,7 @@
     },
     {
       "institution": "Unipanamericana",
-      "area": { "es": "Seguridad Informática", "en": "Information Security" },
+      "area": { "es": "Curso de Seguridad Informática", "en": "Information Security Course" },
       "location": "Bogotá, Colombia",
       "startDate": "2017-06",
       "endDate": "2017-07"
@@ -280,40 +287,49 @@
   "skills": [
     {
       "name": { "es": "Lenguajes", "en": "Languages" },
-      "keywords": ["PHP", "C#", "Python", "JavaScript", "HTML", "CSS"]
+      "keywords": ["PHP", "C#", "JavaScript", "Python", "SQL", "HTML", "CSS"]
     },
     {
       "name": "Backend",
-      "keywords": ["Laravel", "Symfony", "Django", "NodeJS", "NestJS"]
+      "keywords": ["Laravel", "Symfony", ".NET", "Node.js", "NestJS", "Django", "ReactPHP", "GraphQL"]
     },
     {
       "name": "Frontend",
-      "keywords": ["ReactJS", "NextJS", "VueJS", "Angular", "Astro"]
+      "keywords": ["React", "Next.js", "React Native", "Vue", "Angular", "Astro"]
+    },
+    {
+      "name": { "es": "Bases de datos", "en": "Databases" },
+      "keywords": ["MySQL", "PostgreSQL", "MongoDB"]
     },
     {
       "name": { "es": "Nube y DevOps", "en": "Cloud & DevOps" },
       "keywords": [
-        "AWS",
+        "AWS (EC2, Lambda, S3)",
         "Azure",
-        "Cloudflare",
+        "Cloudflare R2",
+        "Vercel",
         "Docker",
+        "GitHub Actions (CI/CD)",
         "Git",
-        "GitHub Actions"
+        "Linux CLI"
       ]
     },
     {
       "name": { "es": "Arquitectura", "en": "Architecture" },
-      "keywords": ["DDD", "CQRS", "SOLID", "CLI"]
+      "keywords": {
+        "es": ["DDD", "CQRS", "Arquitectura hexagonal", "Clean Code", "SOLID", "Patrones de diseño"],
+        "en": ["DDD", "CQRS", "Hexagonal architecture", "Clean Code", "SOLID", "Design patterns"]
+      }
+    },
+    {
+      "name": { "es": "Integraciones", "en": "Integrations" },
+      "keywords": ["VTEX", "Shopify", "Mercado Libre", "WooCommerce", "Rappi", "ePayco", "Mailgun", "Smart Contracts"]
     },
     {
       "name": { "es": "Habilidades blandas", "en": "Soft skills" },
       "keywords": {
-        "es": [
-          "Adaptabilidad",
-          "Trabajo en equipo",
-          "Comunicación interpersonal"
-        ],
-        "en": ["Adaptability", "Teamwork", "Interpersonal communication"]
+        "es": ["Autonomía", "Comunicación con otras áreas", "Mentoría", "Adaptabilidad", "Trabajo en equipo"],
+        "en": ["Ownership", "Cross-team communication", "Mentoring", "Adaptability", "Teamwork"]
       }
     }
   ],
@@ -324,7 +340,7 @@
     },
     {
       "language": { "es": "Inglés", "en": "English" },
-      "fluency": { "es": "Básico", "en": "Basic" }
+      "fluency": { "es": "Intermedio (B1), en formación", "en": "Intermediate (B1), currently studying" }
     }
   ]
 }

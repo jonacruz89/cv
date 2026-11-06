@@ -322,6 +322,7 @@
             "format": "uri"
           },
           "startDate": {
+            "description": "Vacío = sin fechas (ej. freelance)",
             "type": "string",
             "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
           },
@@ -398,8 +399,7 @@
         },
         "required": [
           "company",
-          "position",
-          "startDate"
+          "position"
         ]
       }
     },

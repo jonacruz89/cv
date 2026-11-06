@@ -79,7 +79,7 @@ export const cvSchema = z.object({
         position: text,
         location: text.optional(),
         url: z.url().optional(),
-        startDate: date,
+        startDate: date.optional().describe('Vacío = sin fechas (ej. freelance)'),
         endDate: date.optional().describe('Vacío = actualidad'),
         summary: text.optional(),
         highlights: textList.default([]),

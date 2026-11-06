@@ -36,6 +36,7 @@ export function formatDate (date: string, locale: Locale): string {
 }
 
 export function formatRange (start: string | undefined, end: string | undefined, locale: Locale, ongoing = true): string {
+  if (!start && !end) return ''
   const from = start ? formatDate(start, locale) : ''
   const to = end ? formatDate(end, locale) : (ongoing ? ui[locale].present : '')
   if (from && to && from !== to) return `${from} – ${to}`
@@ -44,7 +45,7 @@ export function formatRange (start: string | undefined, end: string | undefined,
 
 /** Whole years since the earliest visible job, computed at build time. */
 const yearsOfExperience = (() => {
-  const starts = data.work.filter((w) => !w.hidden).map((w) => w.startDate).sort()
+  const starts = data.work.filter((w) => !w.hidden).map((w) => w.startDate).filter((d) => d !== undefined).sort()
   if (!starts.length) return 0
   const [y, m = '1'] = starts[0].split('-')
   const now = new Date()
